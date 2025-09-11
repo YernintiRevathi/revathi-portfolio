@@ -17,18 +17,18 @@ const Education = () => {
       degree: "Intermediate (MPC) - Mathematics, Physics, Chemistry",
       institution: "Sasi Junior College",
       period: "2020 - 2022",
-      cgpa: "98.5%",
+      percentage: "98.5%",
       description: "Completed higher secondary education with exceptional performance in Mathematics, Physics, and Chemistry. Built strong foundation in analytical thinking and problem-solving skills essential for computer science.",
       achievements: ["98.5% - Outstanding Performance", "Mathematics Excellence", "Science Stream Topper"],
-      relevantCourses: ["Advanced Mathematics", "Physics", "Chemistry", "Computer Science Basics"]
+      relevantCourses: ["Advanced Mathematics", "Physics", "Chemistry"]
     },
     {
       degree: "Secondary Education",
       institution: "Catherine Public School",
       period: "2019 - 2020",
-      cgpa: "90.07%",
+      percentage: "99.67%",
       description: "Completed secondary education with excellent grades and developed passion for technology and programming. Participated in various academic and extracurricular activities.",
-      achievements: ["90.07% - Excellent Performance", "Academic Excellence Award"],
+      achievements: ["99.67% - Excellent Performance", "Academic Excellence Award","School Radio sessions organizer"],
       relevantCourses: ["Mathematics", "Science", "Computer Applications", "English"]
     }
   ];
