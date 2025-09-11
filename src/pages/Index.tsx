@@ -30,7 +30,7 @@ const Index = () => {
               </div>
 
               <div className="flex flex-col items-center md:items-start">
-                <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-vibrant bg-clip-text text-transparent pr-7">
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-vibrant bg-clip-text text-transparent flex-shrink-0 pr-7">
                   Revathi Yerninti
                 </h1>
                 <p className="text-xl sm:text-2xl md:text-3xl text-primary font-semibold mb-4">
