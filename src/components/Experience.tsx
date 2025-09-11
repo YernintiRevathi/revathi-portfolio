@@ -1,11 +1,17 @@
-// No longer needs to be a client component, which is better for performance.
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+"use client"; // The Accordion component is interactive, so this must be a client component.
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { CardDescription } from "@/components/ui/card"; // We can reuse this for styling
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, Calendar, MapPin, CheckCircle2 } from "lucide-react";
-import { motion } from "framer-motion";
+import { Calendar, MapPin, CheckCircle2 } from "lucide-react";
 
 const Experience = () => {
-  // Your data structure remains the same.
+  // Your data structure is perfect and remains unchanged.
   const experiences = [
     {
       role: "Freelance App Developer",
@@ -69,26 +75,25 @@ const Experience = () => {
           </p>
         </div>
 
-        {/* Change 1: Replaced the grid with a simple div using space-y for vertical spacing */}
-        <div className="space-y-8">
-          {/* Change 2: Using a single map to render a full card for each experience */}
+        {/* Change 1: Replaced the main container with the Accordion component */}
+        <Accordion type="single" collapsible className="w-full" defaultValue="0">
           {experiences.map((exp, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <Card className="border-border shadow-sm hover:shadow-primary/10 hover:border-primary transition-all duration-300">
-                <CardHeader>
-                  <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
-                    <div className="space-y-1">
-                      <CardTitle className="text-xl">{exp.role}</CardTitle>
-                      <CardDescription className="text-lg font-semibold text-secondary">
+            <AccordionItem key={index} value={index.toString()}>
+              
+              {/* Change 2: The AccordionTrigger is the clickable part (your role title) */}
+              <AccordionTrigger className="text-xl font-semibold hover:no-underline">
+                {exp.role}
+              </AccordionTrigger>
+              
+              {/* Change 3: The AccordionContent is the part that drops down */}
+              <AccordionContent className="pt-4">
+                {/* We can now place all the detailed content inside here */}
+                <div className="space-y-6">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                     <CardDescription className="text-lg font-semibold text-secondary">
                         {exp.company}
                       </CardDescription>
-                      <div className="flex flex-wrap items-center gap-2 pt-2">
+                      <div className="flex flex-wrap items-center gap-2">
                         <Badge variant="default" className="flex items-center gap-1">
                           <Calendar className="w-3 h-3" />
                           {exp.period}
@@ -101,11 +106,10 @@ const Experience = () => {
                           <Badge variant="destructive" className="animate-pulse">Current</Badge>
                         )}
                       </div>
-                    </div>
                   </div>
-                </CardHeader>
-                <CardContent className="space-y-6">
+                  
                   <p className="text-muted-foreground text-sm">{exp.description}</p>
+                  
                   <div>
                     <h4 className="font-semibold mb-3">Key Achievements:</h4>
                     <ul className="space-y-2">
@@ -117,6 +121,7 @@ const Experience = () => {
                       ))}
                     </ul>
                   </div>
+
                   <div>
                     <h4 className="font-semibold mb-3">Technologies Used:</h4>
                     <div className="flex flex-wrap gap-2">
@@ -127,11 +132,11 @@ const Experience = () => {
                       ))}
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            </motion.div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
           ))}
-        </div>
+        </Accordion>
       </div>
     </section>
   );
