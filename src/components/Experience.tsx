@@ -76,7 +76,7 @@ const Experience = () => {
         </div>
 
         {/* Change 1: Replaced the main container with the Accordion component */}
-        <Accordion type="single" collapsible className="w-full" defaultValue="0">
+        <Accordion type="single" collapsible className="w-full">
           {experiences.map((exp, index) => (
             <AccordionItem key={index} value={index.toString()}>
               
