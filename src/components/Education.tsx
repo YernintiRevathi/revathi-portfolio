@@ -126,7 +126,7 @@ const Education = () => {
                           {edu.period}
                         </Badge>
                         <Badge variant="outline">
-                          {edu.degree.includes('CGPA') || edu.degree.includes('%') ? 
+                          {edu.cgpa.includes('CGPA') || edu.degree.includes('%') ? 
                             `${edu.cgpa}` : 
                             `CGPA: ${edu.cgpa}`
                           }
