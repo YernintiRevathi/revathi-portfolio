@@ -1,55 +1,44 @@
 "use client";
-import { useState } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Linkedin, Github, GraduationCap, Award, Calendar, Link as LinkIcon, MoveRight, Laptop2, Cloud, Database, BrainCircuit, Code } from "lucide-react"; // Importing more icons
-import { motion, AnimatePresence } from "framer-motion";
-import { cn } from "@/lib/utils"; // Ensure you have this utility function
 
-// --- Updated Data Structure with Icons ---
-// Added icons to skill categories for better visual representation.
+import React from "react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Award, Code, Globe, Database, Cpu, Wrench, CalendarCheck, GraduationCap, Link as LinkIcon } from "lucide-react";
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
+
+// --- Data for your icons and skills ---
 const skillCategories = [
   {
     category: "Programming Languages",
-    icon: Code, // Generic code icon
-    skills: [
-      "Python", "JavaScript", "Java", "C++", "C"
-    ]
+    icon: Code,
+    skills: ["Python", "JavaScript", "Java", "C++", "C"]
   },
   {
     category: "Web Development",
-    icon: Linkedin, // Using Linkedin as a placeholder for web dev icon
-    skills: [
-      "React", "Node.js", "Express.js", "HTML/CSS", "Tailwind CSS", "Next.js" // Added Tailwind/Next.js
-    ]
+    icon: Globe,
+    skills: ["React", "Node.js", "Express.js", "HTML/CSS", "Tailwind CSS", "Next.js"]
   },
   {
     category: "Mobile Development",
-    icon: GraduationCap, // Using GraduationCap as a placeholder for mobile dev icon
-    skills: [
-      "React Native", "REST APIs"
-    ]
+    icon: Globe,
+    skills: ["React Native", "REST APIs"]
   },
   {
     category: "Databases",
-    icon: Database, // Database icon
-    skills: [
-      "MySQL", "SQLite", "MongoDB"
-    ]
+    icon: Database,
+    skills: ["MySQL", "SQLite", "MongoDB"]
   },
   {
     category: "AI/ML & Data Science",
-    icon: BrainCircuit, // Brain icon for AI/ML
-    skills: [
-      "Python", "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "OpenCV", "Flask"
-    ]
+    icon: Cpu,
+    skills: ["Pandas", "NumPy", "Scikit-learn", "TensorFlow", "OpenCV", "Flask"]
   },
   {
-    category: "Tools & Cloud",
-    icon: Cloud, // Cloud icon for cloud services
-    skills: [
-      "Git/GitHub", "Firebase", "AWS", "Docker", "VS Code", "GPT/Copilot", "Cursor" // Added Docker, VS Code
-    ]
+    category: "Tools & Technologies",
+    icon: Wrench,
+    skills: ["Git/GitHub", "Firebase", "AWS", "Docker", "VS Code", "GPT/Copilot", "Cursor"]
   }
 ];
 
@@ -58,36 +47,36 @@ const achievements = [
     title: "All-India Hackathon Participant",
     date: "September 2024",
     description: "Collaborated with diverse teams across India in a national-level hackathon, focusing on innovative problem-solving.",
-    icon: GraduationCap // Generic icon for achievement
+    icon: GraduationCap,
+    status: "hackathon"
   },
   {
     title: "290-Day LeetCode Streak",
     date: "Ongoing",
-    description: "Demonstrated commitment to continuous learning through daily problem-solving. Solved 400+ problems, earning 13+ badges and 5-star SQL / 4-star Python ratings on HackerRank.",
-    icon: Award // Award icon
+    description: "Demonstrated commitment to continuous learning through daily problem-solving. Solved 400+ problems, earning 13+ badges.",
+    icon: Award,
+    status: "leetcode",
+    link: "https://leetcode.com/u/RevathiYerninti/"
   },
   {
     title: "HackerRank Achievements",
     date: "2024-2025",
-    description: "Achieved 5-star ratings in SQL and 4-star in Python. Completed intermediate and advanced certifications, showcasing proficiency in database querying and algorithmic problem-solving.",
-    icon: Award // Award icon
+    description: "Achieved 5-star ratings in SQL and 4-star in Python. Completed intermediate and advanced certifications.",
+    icon: Award,
+    status: "hackerrank",
+    link: "https://www.hackerrank.com/profile/22331A05I6"
   }
 ];
 
 const Skills = () => {
-  // We don't need hover state here, as the design is static for skills
-  // but we'll keep the structure for potential future interactivity
-
   return (
     <section id="skills" className="py-16 relative overflow-hidden">
-      {/* Change 1: Animated background for the entire section */}
       <div className="absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
         <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-primary/5 blur-[100px]"></div>
       </div>
 
       <div className="container">
         <div className="text-center mb-16">
-          {/* Change 2: Gradient heading */}
           <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-vibrant bg-clip-text text-transparent">
             Skills & Expertise
           </h2>
@@ -100,31 +89,23 @@ const Skills = () => {
           {/* Skills Section */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {skillCategories.map((category, index) => (
-              // Change 3: Each skill category is now a card with a hover effect
               <Card
                 key={index}
-                className="relative p-6 border-border/20 shadow-sm transition-all duration-300 hover:shadow-primary/10 hover:border-primary"
+                className="relative p-6 border-border/20 shadow-sm transition-all duration-300 hover:shadow-primary/10 hover:border-primary group"
               >
-                {/* Change 4: Animated Corner Frames */}
                 <div className="absolute inset-0 border-t border-l border-primary/30 dark:border-primary/30 transition-all duration-300 group-hover:opacity-100 opacity-0">
-                  <span className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-primary" />
-                  <span className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-primary" />
-                  <span className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-primary" />
-                  <span className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-primary" />
+                  <span className="absolute top-3 left-3 w-3 h-3 border-t-2 border-l-2 border-primary" />
+                  <span className="absolute top-3 right-3 w-3 h-3 border-t-2 border-r-2 border-primary" />
+                  <span className="absolute bottom-3 left-3 w-3 h-3 border-b-2 border-l-2 border-primary" />
+                  <span className="absolute bottom-3 right-3 w-3 h-3 border-b-2 border-r-2 border-primary" />
                 </div>
                 
                 <CardHeader className="p-0 mb-4 flex flex-col items-start">
                   <div className="flex items-center gap-3">
-                    {/* Change 5: Animated Icon */}
                     <motion.div
                       className="p-2 rounded-lg bg-primary/10"
-                      animate={{ y: [-5, 5, -5] }} // Subtle up-and-down animation
-                      transition={{
-                        duration: 2,
-                        repeat: Infinity,
-                        repeatType: "loop",
-                        ease: "easeInOut"
-                      }}
+                      animate={{ y: [-3, 3, -3] }}
+                      transition={{ duration: 3, repeat: Infinity, repeatType: "loop", ease: "easeInOut" }}
                     >
                       <category.icon className="w-5 h-5 text-primary" />
                     </motion.div>
@@ -155,27 +136,20 @@ const Skills = () => {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {achievements.map((achievement, index) => (
-                <Card key={index} className="text-center p-6 relative border-border/20 shadow-sm transition-all duration-300 hover:shadow-primary/10 hover:border-primary">
-                   {/* Change 6: Animated Corner Frames for Achievements */}
+                <Card key={index} className="flex flex-col text-center p-6 relative border-border/20 shadow-sm transition-all duration-300 hover:shadow-primary/10 hover:border-primary group">
                     <div className="absolute inset-0 border-t border-l border-primary/30 dark:border-primary/30 transition-all duration-300 group-hover:opacity-100 opacity-0">
-                      <span className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-primary" />
-                      <span className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-primary" />
-                      <span className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-primary" />
-                      <span className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-primary" />
+                      <span className="absolute top-3 left-3 w-3 h-3 border-t-2 border-l-2 border-primary" />
+                      <span className="absolute top-3 right-3 w-3 h-3 border-t-2 border-r-2 border-primary" />
+                      <span className="absolute bottom-3 left-3 w-3 h-3 border-b-2 border-l-2 border-primary" />
+                      <span className="absolute bottom-3 right-3 w-3 h-3 border-b-2 border-r-2 border-primary" />
                     </div>
 
                   <CardHeader className="p-0 mb-4">
                     <div className="flex flex-col items-center gap-3">
-                       {/* Change 7: Animated Icon for Achievements */}
                        <motion.div
                           className="p-2 rounded-lg bg-secondary/10"
-                          animate={{ scale: [1, 1.1, 1] }}
-                          transition={{
-                            duration: 1.5,
-                            repeat: Infinity,
-                            repeatType: "loop",
-                            ease: "easeInOut"
-                          }}
+                          animate={{ scale: [1, 1.05, 1] }}
+                          transition={{ duration: 2, repeat: Infinity, repeatType: "loop", ease: "easeInOut" }}
                         >
                           <achievement.icon className="w-5 h-5 text-secondary" />
                         </motion.div>
@@ -185,11 +159,24 @@ const Skills = () => {
                       {achievement.date}
                     </Badge>
                   </CardHeader>
-                  <CardContent className="p-0">
+                  <CardContent className="p-0 flex-grow">
                     <CardDescription className="text-muted-foreground">
                       {achievement.description}
                     </CardDescription>
                   </CardContent>
+
+                  {/* --- THIS IS THE NEW PART --- */}
+                  {/* It only renders if the link exists */}
+                  {achievement.link && (
+                    <CardFooter className="p-0 pt-4 mt-auto">
+                      <Button asChild variant="secondary" size="sm" className="w-full">
+                        <a href={achievement.link} target="_blank" rel="noopener noreferrer">
+                          <LinkIcon className="w-4 h-4 mr-2" />
+                          View Profile
+                        </a>
+                      </Button>
+                    </CardFooter>
+                  )}
                 </Card>
               ))}
             </div>
