@@ -17,7 +17,7 @@ const navLinks = [
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
@@ -43,7 +43,8 @@ const Header = () => {
         <div className="container flex h-16 items-center justify-between px-4">
           
           {/* --- THIS IS THE MODIFIED LINE --- */}
-          <a href="#home" className="text-xl font-bold bg-gradient-to-r from-primary via-secondary to-vibrant bg-clip-text text-transparent transition-transform hover:scale-105 flex-shrink-0">
+          {/* Added pr-2 (padding-right) to give the gradient rendering space */}
+          <a href="#home" className="text-xl font-bold bg-gradient-to-r from-primary via-secondary to-vibrant bg-clip-text text-transparent transition-transform hover:scale-105 flex-shrink-0 pr-2">
             Revathi Yerninti
           </a>
           
@@ -136,7 +137,6 @@ const Header = () => {
 };
 
 export default Header;
-
 
 
 // "use client";
