@@ -140,7 +140,7 @@ const Projects = () => {
                         variant="outline"
                         className="text-xs border-secondary/20 text-secondary bg-secondary/5 backdrop-blur-sm"
                       >
-                        {skill}
+                        {skills}
                       </Badge>
                     ))}
                   </div>
