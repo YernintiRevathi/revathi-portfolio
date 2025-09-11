@@ -22,7 +22,7 @@ const Index = () => {
                 <img
                   src="/profile.jpg" // Your image path
                   alt="Revathi Yerninti"
-                  className="w-40 h-40 md:w-40 md:h-50 rounded-full shadow-lg object-cover object-top" 
+                  className="w-40 h-40 md:w-48 md:h-72 rounded-full shadow-lg object-cover object-top" 
                 />
               </div>
 
