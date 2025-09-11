@@ -1,18 +1,3 @@
-// src/lib/utils.ts
-import { type ClassValue, clsx } from "clsx"
-import { twMerge } from "tailwind-merge"
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
-}```
-
----
-
-### Step 2: Your New, Patterned `Projects.tsx` Component
-
-Replace the entire content of your `Projects.tsx` file with this new code. I've added the background pattern classes and used the `cn` utility to combine them.
-
-```tsx
 "use client";
 
 import { useState } from "react";
