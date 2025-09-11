@@ -14,7 +14,7 @@ const Index = () => {
       <main>
         <section id="home" className="py-20 text-center bg-gradient-to-br from-primary/5 to-secondary/5">
           <div className="container px-4">
-            <div className="max-w-4xl mx-auto flex flex-col items-center">
+            <div className="max-w-8xl mx-auto flex flex-col items-center">
             {/* Profile Picture */}
             <img
               src="/profile.jpg" // Replace with your image path
