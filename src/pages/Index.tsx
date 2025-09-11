@@ -26,7 +26,7 @@ const Index = () => {
                 full-stack development, and creating scalable solutions.
               </p>
               <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8">
-                <a href="mailto:rrvathiyerninti@gmail.com" className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">
+                <a href="mailto:reeshmayerninti@gmail.com" className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">
                   <Mail className="h-4 w-4" />
                   <span className="hidden sm:inline">Email</span>
                 </a>
