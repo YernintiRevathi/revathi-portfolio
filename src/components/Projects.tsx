@@ -9,7 +9,7 @@ const Projects = () => {
       title: "Movie Recommendation System",
       description: "Led team and implemented ML-based recommendation engine using collaborative filtering and content-based filtering algorithms. Developed sophisticated data preprocessing pipelines to handle user ratings and movie metadata. Implemented personalized recommendations with precision and recall optimization. Built comprehensive evaluation metrics to measure recommendation accuracy and user satisfaction. The system processes thousands of movies and user interactions to provide highly accurate personalized movie suggestions.",
       technologies: ["Python", "Machine Learning", "Pandas", "NumPy", "Scikit-learn", "Collaborative Filtering"],
-      githubUrl: "https://github.com/YernintiRevathi/movie-recommendation",
+      githubUrl: "https://github.com/YernintiRevathi/Movie_recommendation",
       period: "Jul 2024 - Nov 2024",
       featured: true
     },
@@ -17,7 +17,7 @@ const Projects = () => {
       title: "Vehicle Rental Website",
       description: "Built a comprehensive rental management system with browsing, booking, and admin features. Implemented secure user authentication and role-based access control for customers and administrators. Designed responsive UI with Flask templating and modern CSS frameworks. Integrated real-time availability checking and booking confirmation system. Built admin dashboard for vehicle management, booking oversight, and revenue analytics. Implemented secure payment processing and automated email notifications.",
       technologies: ["Flask", "SQLite", "HTML", "CSS", "JavaScript", "Python"],
-      githubUrl: "https://github.com/YernintiRevathi/vehicle-rental",
+      githubUrl: "https://github.com/YernintiRevathi/RentNGo_vehicle_rental",
       period: "Mini Project",
       featured: true
     },
@@ -25,7 +25,7 @@ const Projects = () => {
       title: "Violence Detection System",
       description: "Designed a real-time violence detection model using deep learning and computer vision techniques. Implemented convolutional neural networks for video frame analysis and temporal pattern recognition. Built automated alert system for security applications with high accuracy violence detection. Developed efficient video processing pipeline capable of real-time analysis. Integrated OpenCV for video preprocessing and frame extraction. Created comprehensive testing suite with various violence scenarios and edge cases.",
       technologies: ["Deep Learning", "OpenCV", "Python", "TensorFlow", "Computer Vision", "CNN"],
-      githubUrl: "https://github.com/YernintiRevathi/violence-detection",
+      githubUrl: "https://github.com/YernintiRevathi",
       period: "Ongoing",
       featured: false
     },
@@ -33,7 +33,7 @@ const Projects = () => {
       title: "Ride-Hailing App",
       description: "Implemented driver-rider workflows, focusing on real-time booking logic and system security. Developed comprehensive mobile application using React Native for cross-platform compatibility. Built real-time GPS tracking and route optimization algorithms. Implemented secure payment gateway integration and transaction management. Created driver and rider matching algorithms based on proximity and availability. Developed admin panel for ride management, driver verification, and system analytics. Integrated push notifications for real-time updates and communication.",
       technologies: ["React Native", "APIs", "GPS Tracking", "Real-time Systems", "Mobile Development"],
-      githubUrl: "https://github.com/YernintiRevathi/ride-hailing-app",
+      githubUrl: "https://github.com/YernintiRevathi",
       period: "Ongoing",
       featured: false
     }
