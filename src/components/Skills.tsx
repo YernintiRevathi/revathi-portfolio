@@ -206,46 +206,38 @@
 
 
 "use client";
+
 import React from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Code, Globe, Database, Cpu, Wrench, CalendarCheck } from "lucide-react";
 import { motion } from "framer-motion";
+
+// --- THIS IS THE NEW LINE YOU NEED TO ADD ---
 import { cn } from "@/lib/utils"; 
-// --- Custom Icon Mapping (Using Lucide Icons where possible, and generic where not) ---
-// Using color strings that match common tech brands, slightly adjusted for your vibrant theme
+
+// --- Custom Icon Mapping ---
 const skillIcons = {
-  // Programming
   Python: { icon: Code, color: "text-blue-500" },
   JavaScript: { icon: Code, color: "text-yellow-500" },
   Java: { icon: Code, color: "text-red-600" },
   'C++': { icon: Code, color: "text-blue-700" },
   C: { icon: Code, color: "text-indigo-700" },
-
-  // Web Development
   React: { icon: Globe, color: "text-cyan-500" },
   'Node.js': { icon: Globe, color: "text-green-500" },
   'Express.js': { icon: Globe, color: "text-gray-500" },
   'HTML/CSS': { icon: Globe, color: "text-orange-500" },
-
-  // Mobile Development
   'React Native': { icon: Globe, color: "text-cyan-500" },
   'REST APIs': { icon: Globe, color: "text-purple-500" },
-
-  // Databases
   MySQL: { icon: Database, color: "text-blue-400" },
   SQLite: { icon: Database, color: "text-blue-300" },
   MongoDB: { icon: Database, color: "text-green-600" },
-
-  // AI/ML & Data Science
   Pandas: { icon: Cpu, color: "text-purple-600" },
   NumPy: { icon: Cpu, color: "text-blue-600" },
   'Scikit-learn': { icon: Cpu, color: "text-orange-500" },
   TensorFlow: { icon: Cpu, color: "text-orange-400" },
   OpenCV: { icon: Cpu, color: "text-green-400" },
   'Basic Flask': { icon: Cpu, color: "text-foreground" },
-
-  // Tools & Technologies
   'Git/GitHub': { icon: Wrench, color: "text-gray-500" },
   Firebase: { icon: Wrench, color: "text-yellow-500" },
   AWS: { icon: Wrench, color: "text-orange-500" },
@@ -352,7 +344,6 @@ const Skills = () => {
                           const iconColor = skillIcons[skill as keyof typeof skillIcons]?.color || 'text-muted-foreground';
                           
                           return (
-                            // Change 1: Added colorful icons and custom styling to badges
                             <Badge 
                               key={skillIndex} 
                               variant="outline" 
@@ -413,7 +404,7 @@ const Skills = () => {
   );
 };
 
-export default Skills; 
+export default Skills;
 
 
 
