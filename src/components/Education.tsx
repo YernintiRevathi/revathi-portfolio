@@ -135,13 +135,10 @@ const Education = () => {
               <GraduationCap className="w-8 h-8 text-primary" />
               Formal Education
             </h3>
-            {/* --- CHANGE 1: Corrected Responsive Grid --- */}
-            {/* Now it will be 3 columns on medium screens and up */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {education.map((edu, cardIndex) => (
-                // --- CHANGE 2: Corrected Responsive Card Height ---
-                // It's shorter on medium screens and taller on large screens.
-                <div key={cardIndex} className="relative h-[400px] lg:h-[450px] rounded-lg overflow-hidden border border-border bg-card shadow-sm flex flex-col">
+                // --- THIS IS THE MODIFIED LINE ---
+                <div key={cardIndex} className="relative h-[350px] lg:h-[400px] rounded-lg overflow-hidden border border-border bg-card shadow-sm flex flex-col">
                   <div className="flex-grow relative">
                     <AnimatePresence initial={false} mode="wait">
                       <motion.div
@@ -154,7 +151,7 @@ const Education = () => {
                         transition={{ duration: 0.3 }}
                         className="absolute inset-0 p-6 flex flex-col"
                       >
-                        {/* --- SLIDE CONTENT --- */}
+                        {/* SLIDE CONTENT */}
                         {activeSlides[cardIndex] === 0 && (
                           <div className="space-y-2">
                             <CardTitle className="text-xl">{edu.degree}</CardTitle>
@@ -168,14 +165,14 @@ const Education = () => {
                         {activeSlides[cardIndex] === 1 && (
                           <div className="space-y-2 h-full flex flex-col">
                             <CardTitle>Description</CardTitle>
-                            {/* --- CHANGE 3: Adjusted scrollable area height --- */}
-                            <p className="text-muted-foreground text-sm flex-grow overflow-y-auto pr-2">{edu.description}</p>
+                            {/* --- Adjusted scrollable area height --- */}
+                            <p className="text-muted-foreground text-sm flex-grow overflow-y-auto pr-2 h-[200px] lg:h-[250px]">{edu.description}</p>
                           </div>
                         )}
                         {activeSlides[cardIndex] === 2 && (
                           <div className="space-y-2 h-full flex flex-col">
                             <CardTitle>Achievements</CardTitle>
-                            <ul className="space-y-2 flex-grow overflow-y-auto pr-2">
+                            <ul className="space-y-2 flex-grow overflow-y-auto pr-2 h-[200px] lg:h-[250px]">
                               {edu.achievements.map((a, i) => <li key={i} className="flex items-start gap-3"><CheckCircle2 className="w-4 h-4 text-secondary flex-shrink-0 mt-1" /><span className="text-sm text-muted-foreground">{a}</span></li>)}
                             </ul>
                           </div>
@@ -183,7 +180,7 @@ const Education = () => {
                         {activeSlides[cardIndex] === 3 && (
                           <div className="space-y-2 h-full flex flex-col">
                              <CardTitle>Relevant Coursework</CardTitle>
-                             <div className="flex flex-wrap gap-2 flex-grow overflow-y-auto pr-2">
+                             <div className="flex flex-wrap gap-2 flex-grow overflow-y-auto pr-2 h-[200px] lg:h-[250px]">
                                {edu.relevantCourses.map((c, i) => <Badge key={i} variant="outline" className="text-xs border-primary/30 text-primary/80">{c}</Badge>)}
                              </div>
                           </div>
@@ -191,7 +188,7 @@ const Education = () => {
                       </motion.div>
                     </AnimatePresence>
                   </div>
-                  {/* Navigation controls at the bottom of each card */}
+                  {/* Navigation controls */}
                   <div className="flex-shrink-0 p-4 border-t border-border flex items-center justify-between">
                     <button onClick={() => handleSlideChange(cardIndex, 'prev')} className="p-2 rounded-full hover:bg-muted"><ArrowLeft className="w-4 h-4" /></button>
                     <div className="flex items-center gap-2">
