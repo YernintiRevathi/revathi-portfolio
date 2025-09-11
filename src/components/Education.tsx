@@ -51,7 +51,7 @@ const Education = () => {
       name: "AWS ML Foundations",
       issuer: "Amazon Web Services",
       date: "Apr 2025",
-      credentialId: "AWS-MLF-2025"
+      credentialId: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url"
     },
     {
       name: "AWS Data Engineering",
@@ -69,7 +69,7 @@ const Education = () => {
       name: "IT Essentials",
       issuer: "Cisco",
       date: "May 2023",
-      credentialId: "CISCO-ITE-2023"
+      credentialId: "https://www.credly.com/badges/7dd56904-85fc-4452-833e-327842ced83b/public_url"
     },
     {
       name: "Programming in C",
