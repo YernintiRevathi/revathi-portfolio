@@ -3,7 +3,8 @@ import Projects from "@/components/Projects";
 import Education from "@/components/Education";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
-import { Mail, Linkedin, Github, MapPin, Phone } from "lucide-react";
+// --- Change 1: Imported the 'Code' icon for the LeetCode button ---
+import { Mail, Linkedin, Github, MapPin, Phone, Code } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -16,25 +17,20 @@ const Index = () => {
           <div className="container px-4">
             <div className="max-w-4xl mx-auto flex flex-col items-center gap-8 md:flex-row md:items-center md:gap-12">
               
-              {/* --- MODIFIED SECTION STARTS HERE --- */}
               <div className="flex-shrink-0">
-                {/* 1. Gradient Border Wrapper */}
-                <div className="p-1 rounded-full bg-gradient-to-r from-primary to-secondary
+                <div className="p-1 rounded-full bg-gradient-to-r from-primary via-secondary to-vibrant
                                 transition-transform duration-300 ease-in-out hover:scale-105">
                   <img
                     src="/profile.jpg" // Your image path
                     alt="Revathi Yerninti"
-                    // 2. Image Styling (now inside the wrapper)
                     className="w-40 h-40 md:w-48 md:h-72 rounded-full shadow-lg object-cover object-top
-                               bg-background p-1" // Added background and padding to complete the border effect
+                               bg-background p-1"
                   />
                 </div>
               </div>
-              {/* --- MODIFIED SECTION ENDS HERE --- */}
 
-              {/* Flex Item 2: Text Content */}
               <div className="flex flex-col items-center md:items-start">
-                <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-vibrant bg-clip-text text-transparent">
                   Revathi Yerninti
                 </h1>
                 <p className="text-xl sm:text-2xl md:text-3xl text-primary font-semibold mb-4">
@@ -44,6 +40,7 @@ const Index = () => {
                   Passionate about building innovative applications with AI/ML integration, 
                   full-stack development, and creating scalable solutions.
                 </p>
+                {/* --- Change 2: Added the new LeetCode button to this container --- */}
                 <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4 mb-8">
                   <a href="mailto:reeshmayerninti@gmail.com" className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">
                     <Mail className="h-4 w-4" />
@@ -57,6 +54,11 @@ const Index = () => {
                     <Github className="h-4 w-4" />
                     <span className="hidden sm:inline">GitHub</span>
                   </a>
+                  {/* --- This is the new LeetCode button --- */}
+                  <a href="https://leetcode.com/u/RevathiYerninti/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-yellow-500 text-black rounded-lg hover:bg-yellow-600 transition-colors">
+                    <Code className="h-4 w-4" />
+                    <span className="hidden sm:inline">LeetCode</span>
+                  </a>
                 </div>
               </div>
 
@@ -64,15 +66,15 @@ const Index = () => {
           </div>
         </section>
 
-        {/* ... The rest of your code is unchanged ... */}
         <Experience />
         <Skills />
         <Projects />
         <Education />
+        
         <section id="contact" className="py-16 bg-muted/30">
         <div className="container px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
+              <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-vibrant bg-clip-text text-transparent">Get In Touch</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
               </p>
