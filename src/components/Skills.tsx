@@ -206,7 +206,7 @@
 
 
 "use client";
-
+import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Code, Globe, Database, Cpu, Wrench, CalendarCheck } from "lucide-react";
