@@ -17,7 +17,7 @@ const navLinks = [
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
-  const [isMenuOpen, setIsMenuOpen] = = useState(false);
+  const [isMenuOpen, setIsMenuOpen] =useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
