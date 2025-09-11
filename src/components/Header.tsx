@@ -54,7 +54,7 @@ const Header = () => {
             size="sm"
             onClick={() => {
               const link = document.createElement('a');
-              link.href = '/Revathi_Yerninti_CV.pdf';
+              link.href = './Revathi_Yerninti_CV.pdf';
               link.download = 'Revathi_Yerninti_CV.pdf';
               link.click();
             }}
