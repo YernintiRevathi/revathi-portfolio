@@ -75,7 +75,7 @@ const Skills = () => {
     {
       title: "HackerRank Achievements",
       date: "2024-2025",
-      description: "Earned 5-star SQL rating and 4-star Python rating"
+      description: "Earned 5-star SQL rating and 4-star Python rating.Completed certifications in SQL intermediate and advanced"
     }
   ];
 
