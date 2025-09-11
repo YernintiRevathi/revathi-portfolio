@@ -27,7 +27,7 @@ const Projects = () => {
       technologies: ["Deep Learning", "OpenCV", "Python", "TensorFlow", "Computer Vision", "CNN"],
       githubUrl: "https://github.com/YernintiRevathi",
       period: "Ongoing",
-      featured: false
+      featured: true
     },
     {
       title: "Ride-Hailing App",
@@ -35,7 +35,7 @@ const Projects = () => {
       technologies: ["React Native", "APIs", "GPS Tracking", "Real-time Systems", "Mobile Development"],
       githubUrl: "https://github.com/YernintiRevathi",
       period: "Ongoing",
-      featured: false
+      featured: true
     }
   ];
 
@@ -53,12 +53,17 @@ const Projects = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
           {projects.map((project, index) => (
            /* <Card key={index} className={`h-full ${project.featured ? 'border-primary shadow-lg' : ''}`}>*/
+              /*<Card
+                  key={index}
+                  className={`h-full border border-gray-200 dark:border-gray-700 ${
+                  project.featured ? 'border-primary shadow-lg' : 'shadow-sm'
+                } transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl`}
+>*/
               <Card
   key={index}
-  className={`h-full border border-gray-200 dark:border-gray-700 ${
-  project.featured ? 'border-primary shadow-lg' : 'shadow-sm'
-} transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl`}
+  className={`h-full border border-primary shadow-sm transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl`}
 >
+
 
               <CardHeader>
                 <div className="flex items-start justify-between">
