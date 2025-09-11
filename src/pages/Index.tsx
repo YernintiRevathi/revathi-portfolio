@@ -14,12 +14,12 @@ const Index = () => {
       <main>
         <section id="home" className="py-20 text-center bg-gradient-to-br from-primary/5 to-secondary/5">
           <div className="container px-4">
-            <div className="max-w-8xl mx-auto flex flex-col items-center">
+            <div className="max-w-4xl mx-auto flex flex-col items-center">
             {/* Profile Picture */}
             <img
               src="/profile.jpg" // Replace with your image path
               alt="Revathi Yerninti"
-              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full shadow-lg mb-6 object-cover"
+              className="w-32 h-32 sm:w-50 sm:h-50 rounded-full shadow-lg mb-6 object-cover"
             />
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 Revathi Yerninti
