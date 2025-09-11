@@ -19,7 +19,7 @@ const Index = () => {
             <img
               src="/profile.jpg" // Replace with your image path
               alt="Revathi Yerninti"
-              className="w-33 h-33 sm:w-40 sm:h-40 rounded-full shadow-lg mb-6 object-cover"
+              className="w-34 h-34 sm:w-40 sm:h-40 rounded-full shadow-lg mb-6 object-cover"
             />
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 Revathi Yerninti
