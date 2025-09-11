@@ -52,7 +52,14 @@ const Projects = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className={`h-full ${project.featured ? 'border-primary shadow-lg' : ''}`}>
+           /* <Card key={index} className={`h-full ${project.featured ? 'border-primary shadow-lg' : ''}`}>*/
+              <Card
+  key={index}
+  className={`h-full border ${
+    project.featured ? 'border-primary shadow-lg' : ''
+  } transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl`}
+>
+
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <CardTitle className="text-xl">{project.title}</CardTitle>
