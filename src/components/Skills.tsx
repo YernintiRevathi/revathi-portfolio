@@ -211,7 +211,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Code, Globe, Database, Cpu, Wrench, CalendarCheck } from "lucide-react";
 import { motion } from "framer-motion";
-
+import { cn } from "@/lib/utils"; 
 // --- Custom Icon Mapping (Using Lucide Icons where possible, and generic where not) ---
 // Using color strings that match common tech brands, slightly adjusted for your vibrant theme
 const skillIcons = {
