@@ -67,7 +67,7 @@ const Index = () => {
                   </CardHeader>
                   <CardContent>
                     <CardDescription className="text-base">
-                      <a href="mailto:rrvathiyerninti@gmail.com" className="hover:text-primary transition-colors">
+                      <a href="mailto:reeshmayerninti@gmail.com" className="hover:text-primary transition-colors">
                         reeshmayerninti@gmail.com
                       </a>
                     </CardDescription>
