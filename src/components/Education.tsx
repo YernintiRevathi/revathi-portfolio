@@ -175,7 +175,7 @@ const Education = () => {
             </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {certifications.map((cert, index) => (
-                <Card key={index} className={{cert.status === 'In Progress' ? 'border-primary' : 'border border-gray-300'}shadow-sm hover:shadow-md transition-shadow duration-300`}>
+                <Card key={index} className={`border ${cert.status === 'In Progress' ? 'border-primary' : 'border border-gray-300'}shadow-sm hover:shadow-md transition-shadow duration-300`}>
                   <CardHeader>
                     <CardTitle className="text-lg">{cert.name}</CardTitle>
                     <CardDescription>{cert.issuer}</CardDescription>
