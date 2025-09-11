@@ -182,7 +182,7 @@ const Education = () => {
                     <div className="space-y-2">
                       <div className="flex items-center justify-between text-sm">
                         <span className="text-muted-foreground">Status:</span>
-                        <Badge variant={cert.status === 'In Progress' ? 'secondary' : 'outline'}>
+                        <Badge variant={cert.status === 'In Progress' ? 'secondary' : cert.status==="Done"?"default":'outline'}>
                           {cert.status || 'Completed'}
                         </Badge>
                       </div>
