@@ -57,7 +57,7 @@ const Index = () => {
                   {/* --- This is the new LeetCode button --- */}
                   <a href="https://leetcode.com/u/RevathiYerninti/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-yellow-500 text-black rounded-lg hover:bg-yellow-600 transition-colors">
                     <Code className="h-4 w-4" />
-                    <span className="hidden sm:inline">LeetCode</span>
+                    <span className=" sm:inline">LeetCode</span>
                   </a>
                 </div>
               </div>
