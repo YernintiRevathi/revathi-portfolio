@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, ArrowRight, ArrowLeft } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { cn } from "@/lib/utils";
 
 const Projects = () => {
   // Your projects data, unchanged.
@@ -41,25 +40,12 @@ const Projects = () => {
     }
   ];
 
-  // Change 1: State to track which card is "flipped" or showing its back face.
   const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
 
-  // Animation variants for the sliding effect
   const slideVariants = {
-    enter: (direction: number) => ({
-      x: direction > 0 ? '100%' : '-100%',
-      opacity: 0
-    }),
-    center: {
-      zIndex: 1,
-      x: 0,
-      opacity: 1
-    },
-    exit: (direction: number) => ({
-      zIndex: 0,
-      x: direction < 0 ? '100%' : '-100%',
-      opacity: 0
-    })
+    enter: (direction: number) => ({ x: direction > 0 ? '100%' : '-100%', opacity: 0 }),
+    center: { zIndex: 1, x: 0, opacity: 1 },
+    exit: (direction: number) => ({ zIndex: 0, x: direction < 0 ? '100%' : '-100%', opacity: 0 }),
   };
 
   return (
@@ -74,15 +60,15 @@ const Projects = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+        {/* Change 1: Replaced the grid with a centered, stacked flex layout */}
+        <div className="flex flex-col items-center gap-8">
           {projects.map((project, index) => (
-            // Change 2: The card container now has a fixed height and is set to relative for positioning the slides
+            // Change 2: The card container now has a max width and a more compact height
             <div
               key={index}
-              className="relative h-[350px] rounded-lg overflow-hidden border border-border/20 bg-card"
+              className="relative w-full max-w-4xl h-[300px] rounded-lg overflow-hidden border border-border/20 bg-card"
             >
               <AnimatePresence initial={false}>
-                {/* Change 3: Conditional rendering of the "Back Face" (Description) */}
                 {flippedIndex === index ? (
                   <motion.div
                     key="back"
@@ -91,13 +77,12 @@ const Projects = () => {
                     initial="enter"
                     animate="center"
                     exit="exit"
-                    custom={1} // direction
+                    custom={1}
                     transition={{ duration: 0.3 }}
                   >
                     <CardHeader className="p-0 mb-4 flex-shrink-0">
                       <CardTitle className="text-xl text-primary">{project.title}</CardTitle>
                     </CardHeader>
-                    {/* Change 4: Scrollable content area */}
                     <CardContent className="p-0 flex-grow overflow-y-auto">
                       <CardDescription className="text-sm text-muted-foreground pr-2">{project.description}</CardDescription>
                     </CardContent>
@@ -109,7 +94,6 @@ const Projects = () => {
                     </CardFooter>
                   </motion.div>
                 ) : (
-                  // Change 5: The "Front Face" (Main Details)
                   <motion.div
                     key="front"
                     className="absolute inset-0 p-6 flex flex-col"
@@ -117,7 +101,7 @@ const Projects = () => {
                     initial="enter"
                     animate="center"
                     exit="exit"
-                    custom={-1} // direction
+                    custom={-1}
                     transition={{ duration: 0.3 }}
                   >
                     <CardHeader className="p-0 mb-4">
