@@ -15,7 +15,7 @@ const Projects = () => {
     },
     {
       title: "Vehicle Rental Website",
-      description: "Built a comprehensive rental management system with browsing, booking, and admin features. Implemented secure user authentication and role-based access control for customers and administrators. Designed responsive UI with Flask templating and modern CSS frameworks. Integrated real-time availability checking and booking confirmation system. Built admin dashboard for vehicle management, booking oversight, and revenue analytics. Implemented secure payment processing and automated email notifications.",
+      description: "Built a comprehensive rental management system with browsing, booking, and admin features. Implemented secure user authentication and role-based access control for customers and administrators. Designed responsive UI with Flask templating and modern CSS frameworks. Integrated real-time availability checking and booking confirmation system. Built admin dashboard for vehicle management, booking oversight, and user management.",
       technologies: ["Flask", "SQLite", "HTML", "CSS", "JavaScript", "Python"],
       githubUrl: "https://github.com/YernintiRevathi/RentNGo_vehicle_rental",
       period: "Mini Project",
