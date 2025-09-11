@@ -100,7 +100,7 @@ const Education = () => {
               {education.map((edu, index) => (
                 <Card key={index}>
                   <CardHeader>
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2">
                       <div>
                         <CardTitle className="text-xl">{edu.degree}</CardTitle>
                         <CardDescription className="text-lg font-medium text-primary">
@@ -158,7 +158,7 @@ const Education = () => {
               <Award className="w-6 h-6 mr-2 text-primary" />
               Professional Certifications
             </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {certifications.map((cert, index) => (
                 <Card key={index} className={cert.status === 'In Progress' ? 'border-primary' : ''}>
                   <CardHeader>

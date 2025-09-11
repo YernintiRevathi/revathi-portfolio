@@ -1,63 +1,62 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
 
 const Skills = () => {
   const skillCategories = [
     {
       category: "Programming Languages",
       skills: [
-        { name: "Python", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "Java", level: 80 },
-        { name: "C++", level: 75 },
-        { name: "C", level: 70 }
+        "Python",
+        "JavaScript", 
+        "Java",
+        "C++",
+        "C"
       ]
     },
     {
       category: "Web Development",
       skills: [
-        { name: "React", level: 85 },
-        { name: "Node.js", level: 80 },
-        { name: "Express.js", level: 80 },
-        { name: "Flask", level: 85 },
-        { name: "Django", level: 75 },
-        { name: "HTML/CSS", level: 90 }
+        "React",
+        "Node.js",
+        "Express.js",
+        "Flask",
+        "Django",
+        "HTML/CSS"
       ]
     },
     {
       category: "Mobile Development",
       skills: [
-        { name: "React Native", level: 80 },
-        { name: "REST APIs", level: 85 }
+        "React Native",
+        "REST APIs"
       ]
     },
     {
       category: "Databases",
       skills: [
-        { name: "MySQL", level: 85 },
-        { name: "SQLite", level: 90 },
-        { name: "MongoDB", level: 65 }
+        "MySQL",
+        "SQLite",
+        "MongoDB"
       ]
     },
     {
       category: "AI/ML & Data Science",
       skills: [
-        { name: "Pandas", level: 85 },
-        { name: "NumPy", level: 85 },
-        { name: "Scikit-learn", level: 80 },
-        { name: "TensorFlow", level: 75 },
-        { name: "OpenCV", level: 70 }
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "TensorFlow",
+        "OpenCV"
       ]
     },
     {
       category: "Tools & Technologies",
       skills: [
-        { name: "Git/GitHub", level: 90 },
-        { name: "Firebase", level: 75 },
-        { name: "AWS", level: 70 },
-        { name: "GPT/Copilot", level: 85 },
-        { name: "Cursor", level: 80 }
+        "Git/GitHub",
+        "Firebase",
+        "AWS",
+        "GPT/Copilot",
+        "Cursor"
       ]
     }
   ];
@@ -92,22 +91,18 @@ const Skills = () => {
 
         <div className="space-y-12">
           {/* Skills Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {skillCategories.map((category, index) => (
               <Card key={index}>
                 <CardHeader>
                   <CardTitle className="text-lg">{category.category}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-4">
+                  <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex} className="space-y-2">
-                        <div className="flex justify-between text-sm">
-                          <span className="font-medium">{skill.name}</span>
-                          <span className="text-muted-foreground">{skill.level}%</span>
-                        </div>
-                        <Progress value={skill.level} className="h-2" />
-                      </div>
+                      <Badge key={skillIndex} variant="secondary" className="text-xs">
+                        {skill}
+                      </Badge>
                     ))}
                   </div>
                 </CardContent>
@@ -118,7 +113,7 @@ const Skills = () => {
           {/* Achievements Section */}
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-center">Notable Achievements</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {achievements.map((achievement, index) => (
                 <Card key={index} className="text-center">
                   <CardHeader>

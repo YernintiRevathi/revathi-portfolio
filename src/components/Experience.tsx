@@ -69,7 +69,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <Card key={index} className={exp.current ? 'border-primary shadow-lg' : ''}>
               <CardHeader>
-                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+                <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                   <div className="space-y-2">
                     <CardTitle className="text-xl flex items-center gap-2">
                       <Briefcase className="w-5 h-5 text-primary" />
