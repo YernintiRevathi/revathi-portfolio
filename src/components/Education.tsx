@@ -10,7 +10,7 @@ const Education = () => {
       period: "2022 - 2026 (Expected)",
       cgpa: "8.97/10.0",
       description: "Pursuing comprehensive computer science education with focus on software engineering, data structures, algorithms, and machine learning. Currently maintaining excellent academic performance with hands-on experience in multiple programming languages and development frameworks.",
-      achievements: ["CGPA: 8.97", "Active participant in coding competitions", "Hackathon participant"],
+      achievements: ["CGPA: 8.97", "Active participant in coding competitions", "Hackathon participant","Won 1st place in dance competition","Member of Dance and Art clubs"],
       relevantCourses: ["Data Structures & Algorithms", "Machine Learning", "Database Management", "Software Engineering", "Computer Networks", "Operating Systems"]
     },
     {
