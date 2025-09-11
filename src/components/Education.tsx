@@ -45,43 +45,50 @@ const Education = () => {
       name: "SQL Intermediate",
       issuer: "HackerRank",
       date: "May 2025",
-      certificateLink: "https://www.hackerrank.com/certificates/iframe/9be7bb9bc092"
+      certificateLink: "https://www.hackerrank.com/certificates/iframe/9be7bb9bc092",
+      status:"Done"
     },
     {
       name: "SQL Advanced",
       issuer: "HackerRank",
       date: "May 2025",
-      certificateLink: "https://www.hackerrank.com/certificates/iframe/57bbfb28df27"
+      certificateLink: "https://www.hackerrank.com/certificates/iframe/57bbfb28df27",
+      status:"Done"
     },
     {
       name: "AWS ML Foundations",
       issuer: "Amazon Web Services",
       date: "Apr 2025",
-      certificateLink: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url"
+      certificateLink: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url",
+      status:"Done"
     },
     {
       name: "AWS Data Engineering",
       issuer: "Amazon Web Services",
       date: "Apr 2025",
-      certificateLink: "https://www.credly.com/badges/2398ef71-e1ed-4d28-a171-3bcde4b03365/public_url"
+      certificateLink: "https://www.credly.com/badges/2398ef71-e1ed-4d28-a171-3bcde4b03365/public_url",
+      status:"Done"
     },
     {
       name: "Cloud Computing",
       issuer: "NPTEL",
       date: "Jul-Oct 2024",
-      certificateLink: "NPTEL-CC-2024"
+      certificateLink: "NPTEL-CC-2024",
+      status:"In Progress"
     },
     {
       name: "IT Essentials",
       issuer: "Cisco",
       date: "May 2023",
-      certificateLink: "https://www.credly.com/badges/7dd56904-85fc-4452-833e-327842ced83b/public_url"
+      certificateLink: "https://www.credly.com/badges/7dd56904-85fc-4452-833e-327842ced83b/public_url",
+      status:"Done"
     },
     {
       name: "Programming in C",
       issuer: "Cisco",
       date: "Apr 2023",
-      certificateLink: "CISCO-C-2023"
+      certificateLink: "CISCO-C-2023",
+      status:"In Progress"
     }
   ];
 
@@ -179,11 +186,13 @@ const Education = () => {
                           {cert.status || 'Completed'}
                         </Badge>
                       </div>
-                      <div className="text-xs text-muted-foreground">
-                        <a href={cert.certificateLink} target="_blank">
-                          <span>Click link to view</span>
-                        </a>
-                      </div>
+                      {cert.status === "Done" && (
+                        <div className="text-xs text-muted-foreground">
+                          <a href={cert.certificateLink} target="_blank" rel="noopener noreferrer">
+                            Click link to view
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
