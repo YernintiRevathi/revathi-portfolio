@@ -68,6 +68,10 @@ const Experience = () => {
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <Card key={index} className={exp.current ? 'border-primary shadow-lg' : ''}>
+            <Card
+                  key={index}
+                  className={`h-full border border-primary shadow-sm transform transition-transform duration-300 hover:-translate-y-2 hover:scale-102 hover:shadow-2xl`}
+            >
               <CardHeader>
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                   <div className="space-y-2">
