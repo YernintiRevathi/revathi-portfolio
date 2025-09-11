@@ -19,8 +19,6 @@ const Skills = () => {
         "React",
         "Node.js",
         "Express.js",
-        "Flask",
-        "Django",
         "HTML/CSS"
       ]
     },
@@ -46,7 +44,8 @@ const Skills = () => {
         "NumPy",
         "Scikit-learn",
         "TensorFlow",
-        "OpenCV"
+        "OpenCV",
+        "Basic Flask"
       ]
     },
     {
