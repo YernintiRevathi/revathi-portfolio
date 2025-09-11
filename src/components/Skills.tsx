@@ -68,14 +68,14 @@ const Skills = () => {
       description: "Participated in prestigious national-level hackathon, collaborating with teams across India"
     },
     {
-      title: "280-Day LeetCode Streak",
+      title: "290-Day LeetCode Streak",
       date: "Ongoing",
-      description: "Maintained consistent daily problem-solving practice, demonstrating dedication to continuous learning"
+      description: "Maintained consistent daily problem-solving practice, demonstrating dedication to continuous learning.Earned 13+ badges.Solved over 400+ problems."
     },
     {
       title: "HackerRank Achievements",
       date: "2024-2025",
-      description: "Earned 13+ badges including 5-star SQL rating and 3-star Python rating"
+      description: "Earned 5-star SQL rating and 4-star Python rating"
     }
   ];
 
