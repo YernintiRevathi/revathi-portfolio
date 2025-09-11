@@ -96,9 +96,9 @@ const Education = () => {
               <GraduationCap className="w-6 h-6 mr-2 text-primary" />
               Formal Education
             </h3>
-            <div className="grid gap-6 border border-gray-300">
+            <div className="grid gap-6 ">
               {education.map((edu, index) => (
-                <Card key={index}>
+                <Card key={index} className="border border-gray-300">
                   <CardHeader>
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2">
                       <div>
