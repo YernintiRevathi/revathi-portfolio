@@ -36,7 +36,7 @@ const Education = () => {
   const certifications = [
     {
       name: "Full Stack Development",
-      issuer: "CodeforGeeks",
+      issuer: "GeeksforGeeks",
       date: "Ongoing",
       credentialId: "CFG-FSD-2024",
       status: "In Progress"
@@ -57,7 +57,7 @@ const Education = () => {
       name: "AWS Data Engineering",
       issuer: "Amazon Web Services",
       date: "Apr 2025",
-      credentialId: "AWS-DE-2025"
+      credentialId: "https://www.credly.com/badges/2398ef71-e1ed-4d28-a171-3bcde4b03365/public_url"
     },
     {
       name: "Cloud Computing",
@@ -174,7 +174,7 @@ const Education = () => {
                         </Badge>
                       </div>
                       <div className="text-xs text-muted-foreground">
-                        ID: {cert.credentialId}
+                        <a href={cert.credentialId}>credly link </a>
                       </div>
                     </div>
                   </CardContent>
