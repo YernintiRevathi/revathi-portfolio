@@ -55,10 +55,10 @@ const Projects = () => {
            /* <Card key={index} className={`h-full ${project.featured ? 'border-primary shadow-lg' : ''}`}>*/
               <Card
   key={index}
-  className={`h-full border ${
-    project.featured ? 'border-primary shadow-lg' : ''
-  } transform transition-transform duration-300 hover:-translate-y-2 hover:scale-102 hover:shadow-2xl`}
->
+  className={`h-full border border-gray-200 dark:border-gray-700 ${
+  project.featured ? 'border-primary shadow-lg' : 'shadow-sm'
+} transform transition-transform duration-300 hover:-translate-y-2 hover:scale-102 hover:shadow-2xl`}
+
 
               <CardHeader>
                 <div className="flex items-start justify-between">
