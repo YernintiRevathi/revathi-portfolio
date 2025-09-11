@@ -11,7 +11,7 @@ const Projects = () => {
       technologies: ["Python", "Machine Learning", "Pandas", "NumPy", "Scikit-learn", "Collaborative Filtering"],
       githubUrl: "https://github.com/YernintiRevathi/Movie_recommendation",
       period: "Jul 2024 - Nov 2024",
-      featured: true
+      //featured: true
     },
     {
       title: "Vehicle Rental Website",
@@ -19,7 +19,7 @@ const Projects = () => {
       technologies: ["Flask", "SQLite", "HTML", "CSS", "JavaScript", "Python"],
       githubUrl: "https://github.com/YernintiRevathi/RentNGo_vehicle_rental",
       period: "Mini Project",
-      featured: true
+      //featured: true
     },
     {
       title: "Violence Detection System",
@@ -27,7 +27,7 @@ const Projects = () => {
       technologies: ["Deep Learning", "OpenCV", "Python", "TensorFlow", "Computer Vision", "CNN"],
       githubUrl: "https://github.com/YernintiRevathi",
       period: "Ongoing",
-      featured: true
+      //featured: true
     },
     {
       title: "Ride-Hailing App",
@@ -35,7 +35,7 @@ const Projects = () => {
       technologies: ["React Native", "APIs", "GPS Tracking", "Real-time Systems", "Mobile Development"],
       githubUrl: "https://github.com/YernintiRevathi",
       period: "Ongoing",
-      featured: true
+      //featured: true
     }
   ];
 
