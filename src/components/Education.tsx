@@ -174,8 +174,9 @@ const Education = () => {
                         </Badge>
                       </div>
                       <div className="text-xs text-muted-foreground">
-                        <a href={cert.credentialId}/>
+                        <a href={cert.credentialId}>
                           <span>Credly Link</span>
+                      </a>
                       </div>
                     </div>
                   </CardContent>
