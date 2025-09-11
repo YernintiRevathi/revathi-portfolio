@@ -57,7 +57,7 @@ const Projects = () => {
   key={index}
   className={`h-full border ${
     project.featured ? 'border-primary shadow-lg' : ''
-  } transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl`}
+  } transform transition-transform duration-300 hover:-translate-y-2 hover:scale-102 hover:shadow-2xl`}
 >
 
               <CardHeader>
