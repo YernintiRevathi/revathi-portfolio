@@ -45,7 +45,13 @@ const Education = () => {
       name: "SQL Intermediate",
       issuer: "HackerRank",
       date: "May 2025",
-      credentialId: "HR-SQL-INT-001"
+      credentialId: "https://www.hackerrank.com/certificates/iframe/9be7bb9bc092"
+    },
+    {
+      name: "SQL Advanced",
+      issuer: "HackerRank",
+      date: "May 2025",
+      credentialId: "https://www.hackerrank.com/certificates/iframe/57bbfb28df27"
     },
     {
       name: "AWS ML Foundations",
