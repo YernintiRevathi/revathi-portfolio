@@ -6,35 +6,39 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Full-Stack E-Commerce Platform",
-      description: "A comprehensive e-commerce solution built with modern technologies including React, Node.js, and PostgreSQL. Features include user authentication, payment processing with Stripe integration, real-time inventory management, advanced search and filtering capabilities, admin dashboard for order management, responsive design optimized for mobile and desktop experiences, and automated email notifications for order updates. The platform handles thousands of products with efficient database indexing and implements security best practices including input validation, SQL injection prevention, and secure session management.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "JWT"],
-      githubUrl: "https://github.com/username/ecommerce-platform",
-      liveUrl: "https://ecommerce-demo.example.com",
+      title: "Movie Recommendation System",
+      description: "Led team and implemented ML-based recommendation engine using collaborative filtering and content-based filtering algorithms. Developed sophisticated data preprocessing pipelines to handle user ratings and movie metadata. Implemented personalized recommendations with precision and recall optimization. Built comprehensive evaluation metrics to measure recommendation accuracy and user satisfaction. The system processes thousands of movies and user interactions to provide highly accurate personalized movie suggestions.",
+      technologies: ["Python", "Machine Learning", "Pandas", "NumPy", "Scikit-learn", "Collaborative Filtering"],
+      githubUrl: "https://github.com/YernirtiRevathi/movie-recommendation",
+      liveUrl: "#",
+      period: "Jul 2024 - Nov 2024",
       featured: true
     },
     {
-      title: "AI-Powered Task Management System",
-      description: "An intelligent task management application that leverages machine learning algorithms to predict task completion times, automatically prioritize work items based on deadlines and importance, and provide smart scheduling recommendations. Built with TypeScript and Next.js for the frontend, Python/FastAPI for the ML backend, and Redis for caching. Features include natural language processing for task creation, collaborative workspaces with real-time synchronization, advanced analytics and reporting dashboards, integration with popular calendar applications, and mobile-responsive design with offline functionality using service workers.",
-      technologies: ["Next.js", "TypeScript", "Python", "FastAPI", "Redis", "ML"],
-      githubUrl: "https://github.com/username/ai-task-manager",
-      liveUrl: "https://taskmanager-ai.example.com",
+      title: "Vehicle Rental Website",
+      description: "Built a comprehensive rental management system with browsing, booking, and admin features. Implemented secure user authentication and role-based access control for customers and administrators. Designed responsive UI with Flask templating and modern CSS frameworks. Integrated real-time availability checking and booking confirmation system. Built admin dashboard for vehicle management, booking oversight, and revenue analytics. Implemented secure payment processing and automated email notifications.",
+      technologies: ["Flask", "SQLite", "HTML", "CSS", "JavaScript", "Python"],
+      githubUrl: "https://github.com/YernirtiRevathi/vehicle-rental",
+      liveUrl: "#",
+      period: "Mini Project",
       featured: true
     },
     {
-      title: "Real-Time Collaborative Code Editor",
-      description: "A sophisticated browser-based code editor supporting real-time collaboration between multiple developers. Implements operational transformation algorithms for conflict-free concurrent editing, syntax highlighting for 20+ programming languages, intelligent code completion using Language Server Protocol, integrated terminal with container support, version control integration with Git, and customizable themes and extensions. Built using Monaco Editor, WebSockets for real-time communication, Docker for isolated execution environments, and implements comprehensive user permission systems with role-based access control.",
-      technologies: ["Monaco Editor", "WebSockets", "Docker", "Node.js", "Redis"],
-      githubUrl: "https://github.com/username/collaborative-editor",
-      liveUrl: "https://codeeditor-collab.example.com",
+      title: "Violence Detection System",
+      description: "Designed a real-time violence detection model using deep learning and computer vision techniques. Implemented convolutional neural networks for video frame analysis and temporal pattern recognition. Built automated alert system for security applications with high accuracy violence detection. Developed efficient video processing pipeline capable of real-time analysis. Integrated OpenCV for video preprocessing and frame extraction. Created comprehensive testing suite with various violence scenarios and edge cases.",
+      technologies: ["Deep Learning", "OpenCV", "Python", "TensorFlow", "Computer Vision", "CNN"],
+      githubUrl: "https://github.com/YernirtiRevathi/violence-detection",
+      liveUrl: "#",
+      period: "Ongoing",
       featured: false
     },
     {
-      title: "Blockchain-Based Voting System",
-      description: "A transparent and secure voting platform built on Ethereum blockchain technology, ensuring immutable vote records and anonymous voter participation. Features include smart contract development for vote counting and validation, MetaMask integration for wallet connectivity, comprehensive admin panel for election management, real-time vote tallying with cryptographic verification, mobile-responsive interface optimized for accessibility, and detailed audit trails for election transparency. The system implements advanced cryptographic techniques including zero-knowledge proofs for voter privacy while maintaining vote verifiability.",
-      technologies: ["Solidity", "Web3.js", "React", "Ethereum", "MetaMask"],
-      githubUrl: "https://github.com/username/blockchain-voting",
-      liveUrl: "https://voting-blockchain.example.com",
+      title: "Ride-Hailing App",
+      description: "Implemented driver-rider workflows, focusing on real-time booking logic and system security. Developed comprehensive mobile application using React Native for cross-platform compatibility. Built real-time GPS tracking and route optimization algorithms. Implemented secure payment gateway integration and transaction management. Created driver and rider matching algorithms based on proximity and availability. Developed admin panel for ride management, driver verification, and system analytics. Integrated push notifications for real-time updates and communication.",
+      technologies: ["React Native", "APIs", "GPS Tracking", "Real-time Systems", "Mobile Development"],
+      githubUrl: "https://github.com/YernirtiRevathi/ride-hailing-app",
+      liveUrl: "#",
+      period: "Ongoing",
       featured: false
     }
   ];
@@ -52,15 +56,20 @@ const Projects = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className={`h-full ${project.featured ? 'border-primary' : ''}`}>
+            <Card key={index} className={`h-full ${project.featured ? 'border-primary shadow-lg' : ''}`}>
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <CardTitle className="text-xl">{project.title}</CardTitle>
-                  {project.featured && (
-                    <Badge variant="secondary">Featured</Badge>
-                  )}
+                  <div className="flex flex-col items-end gap-2">
+                    {project.featured && (
+                      <Badge variant="secondary">Featured</Badge>
+                    )}
+                    <Badge variant="outline" className="text-xs">
+                      {project.period}
+                    </Badge>
+                  </div>
                 </div>
-                <CardDescription className="text-sm line-clamp-4">
+                <CardDescription className="text-sm">
                   {project.description}
                 </CardDescription>
               </CardHeader>

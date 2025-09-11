@@ -5,43 +5,77 @@ import { GraduationCap, Award, Calendar } from "lucide-react";
 const Education = () => {
   const education = [
     {
-      degree: "Master of Science in Computer Science",
-      institution: "Stanford University",
-      period: "2020 - 2022",
-      gpa: "3.9/4.0",
-      description: "Specialized in Machine Learning and Artificial Intelligence. Completed advanced coursework in deep learning, natural language processing, and computer vision. Conducted research on neural network optimization under Dr. Jane Smith.",
-      achievements: ["Summa Cum Laude", "Dean's List (4 semesters)", "Outstanding Graduate Student Award"],
-      relevantCourses: ["Advanced Machine Learning", "Deep Learning", "Computer Vision", "Natural Language Processing", "Distributed Systems"]
+      degree: "B.Tech in Computer Science and Engineering",
+      institution: "MVGR College of Engineering",
+      period: "2022 - 2026 (Expected)",
+      cgpa: "8.97/10.0",
+      description: "Pursuing comprehensive computer science education with focus on software engineering, data structures, algorithms, and machine learning. Currently maintaining excellent academic performance with hands-on experience in multiple programming languages and development frameworks.",
+      achievements: ["CGPA: 8.97", "Active participant in coding competitions", "Hackathon participant"],
+      relevantCourses: ["Data Structures & Algorithms", "Machine Learning", "Database Management", "Software Engineering", "Computer Networks", "Operating Systems"]
     },
     {
-      degree: "Bachelor of Science in Software Engineering",
-      institution: "University of California, Berkeley",
-      period: "2016 - 2020",
-      gpa: "3.8/4.0",
-      description: "Comprehensive program covering software development methodologies, data structures, algorithms, and system design. Completed capstone project developing a real-time collaborative platform used by over 1,000 students.",
-      achievements: ["Magna Cum Laude", "ACM Programming Contest Finalist", "Engineering Honor Society"],
-      relevantCourses: ["Data Structures & Algorithms", "Software Engineering", "Database Systems", "Operating Systems", "Web Development"]
+      degree: "Intermediate (MPC) - Mathematics, Physics, Chemistry",
+      institution: "Sasi Junior College",
+      period: "2020 - 2022",
+      cgpa: "98.5%",
+      description: "Completed higher secondary education with exceptional performance in Mathematics, Physics, and Chemistry. Built strong foundation in analytical thinking and problem-solving skills essential for computer science.",
+      achievements: ["98.5% - Outstanding Performance", "Mathematics Excellence", "Science Stream Topper"],
+      relevantCourses: ["Advanced Mathematics", "Physics", "Chemistry", "Computer Science Basics"]
+    },
+    {
+      degree: "Secondary Education",
+      institution: "Catherine Public School",
+      period: "2019 - 2020",
+      cgpa: "90.07%",
+      description: "Completed secondary education with excellent grades and developed passion for technology and programming. Participated in various academic and extracurricular activities.",
+      achievements: ["90.07% - Excellent Performance", "Academic Excellence Award"],
+      relevantCourses: ["Mathematics", "Science", "Computer Applications", "English"]
     }
   ];
 
   const certifications = [
     {
-      name: "AWS Certified Solutions Architect - Professional",
+      name: "Full Stack Development",
+      issuer: "CodeforGeeks",
+      date: "Ongoing",
+      credentialId: "CFG-FSD-2024",
+      status: "In Progress"
+    },
+    {
+      name: "SQL Intermediate",
+      issuer: "HackerRank",
+      date: "May 2025",
+      credentialId: "HR-SQL-INT-001"
+    },
+    {
+      name: "AWS ML Foundations",
       issuer: "Amazon Web Services",
-      date: "2023",
-      credentialId: "AWS-PSA-12345"
+      date: "Apr 2025",
+      credentialId: "AWS-MLF-2025"
     },
     {
-      name: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "2023",
-      credentialId: "GCP-PD-67890"
+      name: "AWS Data Engineering",
+      issuer: "Amazon Web Services",
+      date: "Apr 2025",
+      credentialId: "AWS-DE-2025"
     },
     {
-      name: "Certified Kubernetes Administrator (CKA)",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2022",
-      credentialId: "CKA-11111"
+      name: "Cloud Computing",
+      issuer: "NPTEL",
+      date: "Jul-Oct 2024",
+      credentialId: "NPTEL-CC-2024"
+    },
+    {
+      name: "IT Essentials",
+      issuer: "Cisco",
+      date: "May 2023",
+      credentialId: "CISCO-ITE-2023"
+    },
+    {
+      name: "Programming in C",
+      issuer: "Cisco",
+      date: "Apr 2023",
+      credentialId: "CISCO-C-2023"
     }
   ];
 
@@ -78,7 +112,12 @@ const Education = () => {
                           <Calendar className="w-3 h-3" />
                           {edu.period}
                         </Badge>
-                        <Badge variant="outline">GPA: {edu.gpa}</Badge>
+                        <Badge variant="outline">
+                          {edu.degree.includes('CGPA') || edu.degree.includes('%') ? 
+                            `${edu.cgpa}` : 
+                            `CGPA: ${edu.cgpa}`
+                          }
+                        </Badge>
                       </div>
                     </div>
                   </CardHeader>
@@ -119,9 +158,9 @@ const Education = () => {
               <Award className="w-6 h-6 mr-2 text-primary" />
               Professional Certifications
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {certifications.map((cert, index) => (
-                <Card key={index}>
+                <Card key={index} className={cert.status === 'In Progress' ? 'border-primary' : ''}>
                   <CardHeader>
                     <CardTitle className="text-lg">{cert.name}</CardTitle>
                     <CardDescription>{cert.issuer}</CardDescription>
@@ -129,8 +168,10 @@ const Education = () => {
                   <CardContent>
                     <div className="space-y-2">
                       <div className="flex items-center justify-between text-sm">
-                        <span className="text-muted-foreground">Issued:</span>
-                        <Badge variant="outline">{cert.date}</Badge>
+                        <span className="text-muted-foreground">Status:</span>
+                        <Badge variant={cert.status === 'In Progress' ? 'secondary' : 'outline'}>
+                          {cert.status || 'Completed'}
+                        </Badge>
                       </div>
                       <div className="text-xs text-muted-foreground">
                         ID: {cert.credentialId}
