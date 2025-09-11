@@ -38,50 +38,50 @@ const Education = () => {
       name: "Full Stack Development",
       issuer: "GeeksforGeeks",
       date: "Ongoing",
-      credentialId: "CFG-FSD-2024",
+      certificateLink: "CFG-FSD-2024",
       status: "In Progress"
     },
     {
       name: "SQL Intermediate",
       issuer: "HackerRank",
       date: "May 2025",
-      credentialId: "https://www.hackerrank.com/certificates/iframe/9be7bb9bc092"
+      certificateLink: "https://www.hackerrank.com/certificates/iframe/9be7bb9bc092"
     },
     {
       name: "SQL Advanced",
       issuer: "HackerRank",
       date: "May 2025",
-      credentialId: "https://www.hackerrank.com/certificates/iframe/57bbfb28df27"
+      certificateLink: "https://www.hackerrank.com/certificates/iframe/57bbfb28df27"
     },
     {
       name: "AWS ML Foundations",
       issuer: "Amazon Web Services",
       date: "Apr 2025",
-      credentialId: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url"
+      certificateLink: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url"
     },
     {
       name: "AWS Data Engineering",
       issuer: "Amazon Web Services",
       date: "Apr 2025",
-      credentialId: "https://www.credly.com/badges/2398ef71-e1ed-4d28-a171-3bcde4b03365/public_url"
+      certificateLink: "https://www.credly.com/badges/2398ef71-e1ed-4d28-a171-3bcde4b03365/public_url"
     },
     {
       name: "Cloud Computing",
       issuer: "NPTEL",
       date: "Jul-Oct 2024",
-      credentialId: "NPTEL-CC-2024"
+      certificateLink: "NPTEL-CC-2024"
     },
     {
       name: "IT Essentials",
       issuer: "Cisco",
       date: "May 2023",
-      credentialId: "https://www.credly.com/badges/7dd56904-85fc-4452-833e-327842ced83b/public_url"
+      certificateLink: "https://www.credly.com/badges/7dd56904-85fc-4452-833e-327842ced83b/public_url"
     },
     {
       name: "Programming in C",
       issuer: "Cisco",
       date: "Apr 2023",
-      credentialId: "CISCO-C-2023"
+      certificateLink: "CISCO-C-2023"
     }
   ];
 
@@ -180,7 +180,7 @@ const Education = () => {
                         </Badge>
                       </div>
                       <div className="text-xs text-muted-foreground">
-                        <a href={cert.credentialId} target="_blank">
+                        <a href={cert.certificateLink} target="_blank">
                           <span>Click link to view</span>
                         </a>
                       </div>
