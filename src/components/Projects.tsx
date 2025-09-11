@@ -4,11 +4,12 @@ import { useState } from "react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, ArrowRight } from "lucide-react";
+import { Github, ArrowRight, ArrowLeft } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 const Projects = () => {
-  // Your projects data remains unchanged
+  // Your projects data, unchanged.
   const projects = [
      {
       title: "Movie Recommendation System",
@@ -40,7 +41,26 @@ const Projects = () => {
     }
   ];
 
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  // Change 1: State to track which card is "flipped" or showing its back face.
+  const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
+
+  // Animation variants for the sliding effect
+  const slideVariants = {
+    enter: (direction: number) => ({
+      x: direction > 0 ? '100%' : '-100%',
+      opacity: 0
+    }),
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1
+    },
+    exit: (direction: number) => ({
+      zIndex: 0,
+      x: direction < 0 ? '100%' : '-100%',
+      opacity: 0
+    })
+  };
 
   return (
     <section id="projects" className="py-16 bg-muted/30">
@@ -56,60 +76,80 @@ const Projects = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
           {projects.map((project, index) => (
-            // Change 1: The main container is now a 'group' for hover effects and relative for positioning the frame
+            // Change 2: The card container now has a fixed height and is set to relative for positioning the slides
             <div
               key={index}
-              className="relative rounded-lg overflow-hidden group"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
+              className="relative h-[350px] rounded-lg overflow-hidden border border-border/20 bg-card"
             >
-              {/* Change 2: The Animated "Tech Frame" on the Edges */}
-              <AnimatePresence>
-                {hoveredIndex === index && (
+              <AnimatePresence initial={false}>
+                {/* Change 3: Conditional rendering of the "Back Face" (Description) */}
+                {flippedIndex === index ? (
                   <motion.div
-                    className="absolute inset-0"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
+                    key="back"
+                    className="absolute inset-0 p-6 flex flex-col"
+                    variants={slideVariants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    custom={1} // direction
                     transition={{ duration: 0.3 }}
                   >
-                    {/* Corner Brackets */}
-                    <span className="absolute top-3 left-3 w-6 h-6 border-t-2 border-l-2 border-primary" />
-                    <span className="absolute top-3 right-3 w-6 h-6 border-t-2 border-r-2 border-primary" />
-                    <span className="absolute bottom-3 left-3 w-6 h-6 border-b-2 border-l-2 border-primary" />
-                    <span className="absolute bottom-3 right-3 w-6 h-6 border-b-2 border-r-2 border-primary" />
+                    <CardHeader className="p-0 mb-4 flex-shrink-0">
+                      <CardTitle className="text-xl text-primary">{project.title}</CardTitle>
+                    </CardHeader>
+                    {/* Change 4: Scrollable content area */}
+                    <CardContent className="p-0 flex-grow overflow-y-auto">
+                      <CardDescription className="text-sm text-muted-foreground pr-2">{project.description}</CardDescription>
+                    </CardContent>
+                    <CardFooter className="p-0 pt-4 flex-shrink-0">
+                      <Button variant="outline" size="sm" onClick={() => setFlippedIndex(null)}>
+                        <ArrowLeft className="w-4 h-4 mr-2" />
+                        Back
+                      </Button>
+                    </CardFooter>
+                  </motion.div>
+                ) : (
+                  // Change 5: The "Front Face" (Main Details)
+                  <motion.div
+                    key="front"
+                    className="absolute inset-0 p-6 flex flex-col"
+                    variants={slideVariants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    custom={-1} // direction
+                    transition={{ duration: 0.3 }}
+                  >
+                    <CardHeader className="p-0 mb-4">
+                      <div className="flex items-start justify-between">
+                        <CardTitle className="text-xl">{project.title}</CardTitle>
+                        <Badge variant="outline" className="text-xs flex-shrink-0">
+                          {project.period}
+                        </Badge>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="p-0 flex-grow">
+                      <h4 className="font-semibold text-sm mb-2">Technologies Used:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {project.technologies.map((tech, techIndex) => (
+                          <Badge key={techIndex} variant="secondary" className="text-xs bg-secondary/10 text-secondary border-secondary/20">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                    <CardFooter className="p-0 pt-4 flex items-center justify-between">
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-muted-foreground hover:text-primary flex items-center gap-2">
+                        <Github className="w-4 h-4" />
+                        Source Code
+                      </a>
+                       <Button variant="secondary" size="sm" onClick={() => setFlippedIndex(index)}>
+                        View Details <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </CardFooter>
                   </motion.div>
                 )}
               </AnimatePresence>
-              
-              {/* Change 3: The actual card content, with padding to not overlap the frame */}
-              <Card className="h-full bg-card/80 backdrop-blur-sm border-border/20 transition-all duration-300 group-hover:border-primary/30">
-                 <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <CardTitle className="text-xl">{project.title}</CardTitle>
-                    <Badge variant="outline" className="text-xs flex-shrink-0">
-                      {project.period}
-                    </Badge>
-                  </div>
-                  <CardDescription className="text-sm pt-2 text-muted-foreground line-clamp-3">
-                    {project.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="secondary" className="text-xs bg-secondary/10 text-secondary border-secondary/20">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-                <CardFooter>
-                   <div className="text-sm font-semibold text-primary flex items-center gap-2">
-                    View Project <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-                  </div>
-                </CardFooter>
-              </Card>
             </div>
           ))}
         </div>
