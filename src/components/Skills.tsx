@@ -75,7 +75,7 @@ const achievements = [
   }
 ];
 
-const Projects = () => {
+const Skills = () => {
   // We don't need hover state here, as the design is static for skills
   // but we'll keep the structure for potential future interactivity
 
@@ -140,7 +140,7 @@ const Projects = () => {
                         variant="outline"
                         className="text-xs border-secondary/20 text-secondary bg-secondary/5 backdrop-blur-sm"
                       >
-                        {skills}
+                        {skill}
                       </Badge>
                     ))}
                   </div>
