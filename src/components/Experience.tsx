@@ -82,7 +82,7 @@ const Experience = () => {
               
               {/* Change 2: The AccordionTrigger is the clickable part (your role title) */}
               <AccordionTrigger className="text-xl font-semibold hover:no-underline">
-                {exp.role}
+                {exp.role} ({exp.company})
               </AccordionTrigger>
               
               {/* Change 3: The AccordionContent is the part that drops down */}
