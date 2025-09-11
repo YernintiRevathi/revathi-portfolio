@@ -157,10 +157,10 @@ export default Experience;```
 1.  **Gradient Heading:** The main section title now matches your hero section for a consistent brand identity.
 2.  **Vertical Timeline:** On desktops, your experience is now laid out along a central timeline, with jobs alternating left and right. On mobile, it gracefully collapses into a single, easy-to-read column.
 3.  **Timeline Nodes:** Each entry on the desktop timeline has a circular "node" with a briefcase icon, making the structure clear and professional.
-4.  **Prominent Company Name:** The company name now uses the `secondary` color (your vibrant cyan) to stand out.
-5.  **Impactful Achievements:** Simple bullet points have been replaced with **Checkmark icons** in your secondary color, which gives a stronger impression of accomplishment.
-6.  **Vibrant Tech Badges:** The technology badges now have a subtle background and border using your `secondary` theme color, making them pop visually.
-7.  **"Current" Badge:** The badge for your current role now has a subtle `animate-pulse` effect to draw attention to your present work.
+4.  **Prominent Company Name:** The company name now uses the `//secondary` color (your vibrant cyan) to stand out.
+//5.  **Impactful Achievements:** Simple bullet points have been replaced with **Checkmark icons** in your secondary color, which gives a stronger impression of accomplishment.
+//6.  **Vibrant Tech Badges:** The technology badges now have a subtle background and border using your `secondary` theme color, making them pop visually.
+//7.  **"Current" Badge:** The badge for your current role now has a subtle `animate-pulse` effect to draw attention to your present work.
 
 
 
