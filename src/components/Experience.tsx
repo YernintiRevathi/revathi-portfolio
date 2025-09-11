@@ -13,10 +13,10 @@ const Experience = () => {
       current: true,
       description: "Developing scalable ride-booking apps (web + mobile) using React, Firebase, and REST APIs. Integrated real-time database and designed backend for scalability and security. Developing a website and an app for efficient ride booking implementations.",
       achievements: [
-        "Built cross-platform mobile application with React Native",
-        "Implemented real-time GPS tracking and route optimization",
-        "Designed scalable backend architecture with Firebase",
-        "Integrated secure payment gateway and transaction management"
+        "Building cross-platform mobile application with React Native",
+        "Implementing real-time GPS tracking and route optimization",
+        "Designing scalable backend architecture with Firebase",
+        "Integrating secure payment gateway and transaction management"
       ],
       technologies: ["React Native", "Firebase", "REST APIs", "Real-time Database", "GPS Integration"]
     },
