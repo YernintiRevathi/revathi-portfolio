@@ -44,7 +44,7 @@ const Header = () => {
           
           {/* --- THIS IS THE MODIFIED LINE --- */}
           {/* Added pr-2 (padding-right) to give the gradient rendering space */}
-          <a href="#home" className="text-xl font-bold bg-gradient-to-r from-primary via-secondary to-vibrant bg-clip-text text-transparent transition-transform hover:scale-105 flex-shrink-0 pr-2">
+          <a href="#home" className="text-xl font-bold bg-gradient-to-r from-primary via-secondary to-vibrant bg-clip-text text-transparent transition-transform hover:scale-105 flex-shrink-0 pr-3">
             Revathi Yerninti
           </a>
           
