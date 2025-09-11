@@ -6,12 +6,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { cn } from "@/lib/utils"; // Change 1: Import the cn utility
 
 const Projects = () => {
+  // Your projects data remains unchanged
   const projects = [
-    // ... (Your projects data remains unchanged)
-    {
+     {
       title: "Movie Recommendation System",
       description: "Led team and implemented ML-based recommendation engine using collaborative filtering and content-based filtering algorithms. Developed sophisticated data preprocessing pipelines to handle user ratings and movie metadata. Implemented personalized recommendations with precision and recall optimization. Built comprehensive evaluation metrics to measure recommendation accuracy and user satisfaction. The system processes thousands of movies and user interactions to provide highly accurate personalized movie suggestions.",
       technologies: ["Python", "Machine Learning", "Pandas", "NumPy", "Scikit-learn", "Collaborative Filtering"],
@@ -43,18 +42,6 @@ const Projects = () => {
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-  // Change 2: Define background styles as variables for cleaner code
-  const cardPatternStyle = {
-    backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--border)) 1px, transparent 0)`,
-    backgroundSize: '20px 20px'
-  };
-
-  const overlayPatternStyle = {
-    backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='2' stroke='hsl(var(--primary))'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`,
-    backgroundSize: '40px 40px',
-    opacity: 0.1
-  };
-
   return (
     <section id="projects" className="py-16 bg-muted/30">
       <div className="container">
@@ -69,27 +56,46 @@ const Projects = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            // Change 1: The main container is now a 'group' for hover effects and relative for positioning the frame
+            <div
               key={index}
-              className="relative rounded-lg overflow-hidden border border-border/20 group"
+              className="relative rounded-lg overflow-hidden group"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              {/* Change 3: Added the subtle dot-grid pattern to the main card */}
-              <div
-                className="absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                style={cardPatternStyle}
-              />
-              <div className="relative p-6 bg-card/80 backdrop-blur-sm h-full flex flex-col">
-                <CardHeader className="p-0 mb-4">
+              {/* Change 2: The Animated "Tech Frame" on the Edges */}
+              <AnimatePresence>
+                {hoveredIndex === index && (
+                  <motion.div
+                    className="absolute inset-0"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {/* Corner Brackets */}
+                    <span className="absolute top-3 left-3 w-6 h-6 border-t-2 border-l-2 border-primary" />
+                    <span className="absolute top-3 right-3 w-6 h-6 border-t-2 border-r-2 border-primary" />
+                    <span className="absolute bottom-3 left-3 w-6 h-6 border-b-2 border-l-2 border-primary" />
+                    <span className="absolute bottom-3 right-3 w-6 h-6 border-b-2 border-r-2 border-primary" />
+                  </motion.div>
+                )}
+              </AnimatePresence>
+              
+              {/* Change 3: The actual card content, with padding to not overlap the frame */}
+              <Card className="h-full bg-card/80 backdrop-blur-sm border-border/20 transition-all duration-300 group-hover:border-primary/30">
+                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <CardTitle className="text-xl">{project.title}</CardTitle>
                     <Badge variant="outline" className="text-xs flex-shrink-0">
                       {project.period}
                     </Badge>
                   </div>
+                  <CardDescription className="text-sm pt-2 text-muted-foreground line-clamp-3">
+                    {project.description}
+                  </CardDescription>
                 </CardHeader>
-                <CardContent className="p-0 flex-grow">
+                <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
                       <Badge key={techIndex} variant="secondary" className="text-xs bg-secondary/10 text-secondary border-secondary/20">
@@ -98,51 +104,13 @@ const Projects = () => {
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter className="p-0 pt-6">
+                <CardFooter>
                    <div className="text-sm font-semibold text-primary flex items-center gap-2">
-                    View Details <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    View Project <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </div>
                 </CardFooter>
-              </div>
-
-              <AnimatePresence>
-                {hoveredIndex === index && (
-                  <motion.div
-                    className="absolute inset-0 p-6 bg-background/90 backdrop-blur-md flex flex-col"
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.95 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    {/* Change 4: Added the subtle circuit-board pattern to the overlay */}
-                    <div className="absolute inset-0" style={overlayPatternStyle} />
-                    <div className="relative"> {/* Content must be relative to appear above the pattern */}
-                      <CardHeader className="p-0 mb-4">
-                        <CardTitle className="text-xl text-primary">{project.title}</CardTitle>
-                        <CardDescription className="text-sm pt-2 text-muted-foreground">{project.description}</CardDescription>
-                      </CardHeader>
-                      <CardContent className="p-0 flex-grow">
-                        <div className="flex flex-wrap gap-2">
-                          {project.technologies.map((tech, techIndex) => (
-                            <Badge key={techIndex} variant="secondary" className="text-xs bg-secondary/10 text-secondary border-secondary/20">
-                              {tech}
-                            </Badge>
-                          ))}
-                        </div>
-                      </CardContent>
-                      <CardFooter className="p-0 pt-6">
-                        <Button asChild>
-                          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                            <Github className="w-4 h-4" />
-                            View Source Code
-                          </a>
-                        </Button>
-                      </CardFooter>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.div>
+              </Card>
+            </div>
           ))}
         </div>
       </div>
