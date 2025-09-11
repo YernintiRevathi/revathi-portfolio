@@ -123,7 +123,7 @@ const Index = () => {
               
               <div className="text-center mt-8">
                 <Button size="lg" asChild>
-                  <a href="mailto:rrvathiyerninti@gmail.com" className="flex items-center gap-2">
+                  <a href="mailto:reeshmayerninti@gmail.com" className="flex items-center gap-2">
                     <Mail className="h-5 w-5" />
                     Send me an email
                   </a>
