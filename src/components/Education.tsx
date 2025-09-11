@@ -181,7 +181,7 @@ const Education = () => {
                       </div>
                       <div className="text-xs text-muted-foreground">
                         <a href={cert.credentialId} target="_blank">
-                          <span>Credly Link</span>
+                          <span>Click link to view</span>
                         </a>
                       </div>
                     </div>
