@@ -22,7 +22,7 @@ const Experience = () => {
     },
     {
       role: "Java Full Stack Developer Intern",
-      company: "NDV Techops",
+      company: "NDV Techsys",
       period: "May 2025 - Jul 2025",
       location: "Remote",
       type: "Internship",
@@ -38,7 +38,7 @@ const Experience = () => {
     },
     {
       role: "AI/ML Intern",
-      company: "NDV Techops",
+      company: "NDV Techsys",
       period: "May 2025 - Jul 2025",
       location: "Remote",
       type: "Internship",
