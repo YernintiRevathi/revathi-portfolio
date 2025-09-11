@@ -111,7 +111,9 @@ const Education = () => {
             </h3>
             <div className="grid gap-6 ">
               {education.map((edu, index) => (
-                <Card key={index} className="border border-gray-300">
+                <Card  key={index} 
+                  className="border border-gray-300 shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
                   <CardHeader>
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2">
                       <div>
