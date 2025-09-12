@@ -28,7 +28,7 @@ const Index = () => {
           
           {/* Change 3: The content container is now lifted to a higher layer */}
           <div className="container px-4 relative z-10">
-            <div className="max-w-4xl mx-auto flex flex-col items-center gap-8 md:flex-row md:items-center md:gap-12 bg-background-black">
+            <div className="max-w-4xl mx-auto flex flex-col items-center gap-8 md:flex-row md:items-center md:gap-12">
               
               <div className="flex-shrink-0">
                 <div className="p-1 rounded-full bg-gradient-to-r from-primary via-secondary to-vibrant transition-transform duration-300 ease-in-out hover:scale-105">
@@ -41,7 +41,7 @@ const Index = () => {
               </div>
 
               <div className="flex flex-col items-center md:items-start">
-                <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-vibrant text-transparent bg-clip-text flex-shrink-0 pr-6">
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-vibrant text-transparent bg-clip-text flex-shrink-0  gradient-text-fix">
                   Revathi Yerninti
                 </h1>
                 <p className="text-xl sm:text-2xl md:text-3xl text-primary font-semibold mb-4">
