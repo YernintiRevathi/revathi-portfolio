@@ -90,7 +90,7 @@ const Experience = () => {
               <Card className="overflow-hidden">
                 <Accordion type="single" collapsible>
                   <AccordionItem value={`item-${index}`} className="border-none">
-                    <AccordionTrigger className="text-xl font-semibold p-6 hover:no-underline">
+                    <AccordionTrigger className="text-xl font-semibold p-2 hover:no-underline">
                       {exp.role} 
                       <span className="text-lg font-medium text-muted-foreground ml-2">({exp.company})</span>
                     </AccordionTrigger>
