@@ -76,21 +76,22 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="space-y-4 max-w-4xl mx-auto">
-          {experiences.map((exp, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <Card className="overflow-hidden">
-                {/* --- Change 1: Added type="single" to the Accordion --- */}
-                <Accordion type="single" collapsible>
+        <div className="max-w-4xl mx-auto">
+          {/* Change 1: The single Accordion component is now the main wrapper */}
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            {experiences.map((exp, index) => (
+              // The Card is now inside the map, but the Accordion is outside
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Card className="overflow-hidden">
+                  {/* Change 2: AccordionItem is now a direct child of the Accordion */}
                   <AccordionItem value={`item-${index}`} className="border-none">
                     <AccordionTrigger className="p-6 text-xl font-semibold hover:no-underline">
-                      {/* --- Change 2: Wrapped the trigger content in a Flexbox container --- */}
                       <div className="flex w-full items-center justify-between">
                         <span className="text-left">{exp.role}</span>
                         <span className="text-lg font-medium text-muted-foreground mr-4 text-right">({exp.company})</span>
@@ -140,10 +141,10 @@ const Experience = () => {
                       </div>
                     </AccordionContent>
                   </AccordionItem>
-                </Accordion>
-              </Card>
-            </motion.div>
-          ))}
+                </Card>
+              </motion.div>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>
