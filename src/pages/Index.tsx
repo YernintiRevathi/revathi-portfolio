@@ -47,7 +47,7 @@ const Index = () => {
                 <p className="text-xl sm:text-2xl md:text-3xl text-primary font-semibold mb-4">
                   Full Stack Developer | Machine Learning Programmer
                 </p>
-                <p className="color:white text-base sm:text-lg text-foreground/80 max-w-2xl mx-auto md:mx-0 mb-8 px-4 md:px-0">
+                <p className="text-white sm:text-lg text-foreground/80 max-w-2xl mx-auto md:mx-0 mb-8 px-4 md:px-0">
                   Passionate about building innovative applications with AI/ML integration, 
                   full-stack development, and creating scalable solutions.
                 </p>
