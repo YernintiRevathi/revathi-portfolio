@@ -20,7 +20,7 @@ const Index = () => {
           {/* Change 2: Created a new div for the background image and pushed it to the back */}
           <div 
             className="absolute inset-0 z-0"
-            style={{ backgroundImage: `url('/hero-background.avif')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+            style={{ backgroundImage: `url('/hero-background.avif')`, backgroundSize: 'contain', backgroundPosition: 'center' }}
           />
 
           {/* The overlay also sits at the back, on top of the image */}
