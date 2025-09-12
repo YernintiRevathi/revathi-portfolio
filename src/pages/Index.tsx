@@ -35,7 +35,7 @@ const Index = () => {
                   <img
                     src="/profile.jpg"
                     alt="Revathi Yerninti"
-                    className="w-40 h-40 md:w-48 md:h-72 rounded-full shadow-lg object-cover object-top pr-1"
+                    className="w-40 h-40 md:w-48 md:h-72 rounded-full shadow-lg object-cover object-top border-4 border-black"
                   />
                 </div>
               </div>
