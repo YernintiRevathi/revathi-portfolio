@@ -1,73 +1,72 @@
-# Welcome to your Lovable project
+# Revathi Yerninti - Personal Portfolio
 
-## Project info
+This is the source code for my personal portfolio, a fully responsive and interactive single-page application designed to showcase my skills, experience, and projects as a Full Stack Developer and Machine Learning Programmer.
 
-**URL**: https://lovable.dev/projects/207103ba-b480-41a0-90fc-0e60ab72c342
+**Live Demo:** [**revathi-yerninti.vercel.app**](https://revathi-portfolio-ebon.vercel.app/)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+-   **Stunning Hero Section:** A dynamic hero section featuring a night sky background, an animated gradient border on the profile picture, and vibrant gradient text.
+-   **Dual-Theme Mode:** Seamlessly switch between a custom light theme (light blue) and a stunning dark theme with a single click.
+-   **Interactive & Animated UI:** Built with Framer Motion to provide smooth page transitions, scroll-based fade-in animations, and sophisticated micro-interactions.
+-   **Sophisticated Navigation:** A "magic underline" navigation bar that fluidly slides to indicate the active section as you scroll. It collapses into a clean, animated hamburger menu on mobile.
+-   **Interactive Experience Section:** An elegant accordion layout that allows visitors to explore each job role in detail without cluttering the initial view.
+-   **"Two-Slide" Project Cards:** A unique card design where users can click to "flip" or "slide" to a detailed, scrollable description of each project.
+-   **Advanced Styling:** Features a cohesive and vibrant color palette, custom-designed cards with patterns/frames, and a "glassmorphism" aesthetic.
+-   **Fully Responsive:** Meticulously designed to provide a seamless experience on all devices, from large desktop monitors to mobile phones.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/207103ba-b480-41a0-90fc-0e60ab72c342) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+This portfolio is built with a modern, performant, and scalable tech stack:
 
-**Use your preferred IDE**
+-   **Framework:** [React](https://reactjs.org/) (with [Vite](https://vitejs.dev/))
+-   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+-   **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
+-   **Animation:** [Framer Motion](https://www.framer.com/motion/)
+-   **Icons:** [Lucide React](https://lucide.dev/)
+-   **Theming:** [next-themes](https://github.com/pacocoursey/next-themes)
+-   **Deployment:** [Vercel](https://vercel.com/)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+To run this project locally on your machine, follow these steps:
 
-Follow these steps:
+### Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+-   [Node.js](https://nodejs.org/en/) (v18 or later)
+-   [npm](https://www.npmjs.com/) (or yarn/pnpm)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation & Setup
 
-# Step 3: Install the necessary dependencies.
-npm i
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/YernintiRevathi/your-portfolio-repo.git <!-- 👈 **REPLACE WITH YOUR REPO URL!** -->
+    cd your-portfolio-repo
+    ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-**Edit a file directly in GitHub**
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+4.  **Open in your browser:**
+    Navigate to `http://localhost:5173` (or whatever port your terminal indicates) to see the application running.
 
-**Use GitHub Codespaces**
+## 🌐 Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This portfolio is automatically deployed via **Vercel**. Every push to the `main` branch on GitHub triggers a new build and deploys the latest version of the site, ensuring a seamless CI/CD (Continuous Integration / Continuous Deployment) pipeline.
 
-## What technologies are used for this project?
+## 📬 Contact
 
-This project is built with:
+-   **LinkedIn:** [@YernintiRevathi](https://www.linkedin.com/in/yerninti-revathi-a62484259)
+-   **GitHub:** [@YernintiRevathi](https://github.com/YernintiRevathi)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/207103ba-b480-41a0-90fc-0e60ab72c342) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+with 🫶 by Revathi
