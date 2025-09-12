@@ -28,7 +28,7 @@ const Index = () => {
           
           {/* Change 3: The content container is now lifted to a higher layer */}
           <div className="container px-4 relative z-10">
-            <div className="max-w-4xl mx-auto flex flex-col items-center gap-8 md:flex-row md:items-center md:gap-12 background-black">
+            <div className="max-w-4xl mx-auto flex flex-col items-center gap-8 md:flex-row md:items-center md:gap-12 bg-background-black">
               
               <div className="flex-shrink-0">
                 <div className="p-1 rounded-full bg-gradient-to-r from-primary via-secondary to-vibrant transition-transform duration-300 ease-in-out hover:scale-105">
