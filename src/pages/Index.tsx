@@ -24,7 +24,7 @@ const Index = () => {
           />
 
           {/* The overlay also sits at the back, on top of the image */}
-          <div className="absolute inset-0 z-0  backdrop-blur-sm" />
+          <div className="absolute inset-0 z-0 bg-black/50 backdrop-blur-sm" />
           
           {/* Change 3: The content container is now lifted to a higher layer */}
           <div className="container px-4 relative z-10">
