@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Card, CardContent, CardHeader } from "@/components/ui/card"; // Import Card components
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -76,10 +76,8 @@ const Experience = () => {
           </p>
         </div>
 
-        {/* Change 1: Wrapped the Accordion in a div with vertical spacing */}
         <div className="space-y-4 max-w-4xl mx-auto">
           {experiences.map((exp, index) => (
-            // Change 2: Each item is now wrapped in an animated Card for the "box" effect
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
@@ -88,11 +86,15 @@ const Experience = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Card className="overflow-hidden">
+                {/* --- Change 1: Added type="single" to the Accordion --- */}
                 <Accordion type="single" collapsible>
                   <AccordionItem value={`item-${index}`} className="border-none">
-                    <AccordionTrigger className="text-xl font-semibold p-6 hover:no-underline">
-                      {exp.role} 
-                      <span className="text-lg font-medium text-muted-foreground ml-2">({exp.company})</span>
+                    <AccordionTrigger className="p-6 text-xl font-semibold hover:no-underline">
+                      {/* --- Change 2: Wrapped the trigger content in a Flexbox container --- */}
+                      <div className="flex w-full items-center justify-between">
+                        <span className="text-left">{exp.role}</span>
+                        <span className="text-lg font-medium text-muted-foreground mr-4 text-right">({exp.company})</span>
+                      </div>
                     </AccordionTrigger>
                     
                     <AccordionContent className="px-6 pb-6">
