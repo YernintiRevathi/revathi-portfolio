@@ -62,9 +62,9 @@ const achievements = [
     status: "hackathon"
   },
   {
-    title: "290-Day LeetCode Streak",
+    title: "310-Day LeetCode Streak",
     date: "Ongoing",
-    description: "Demonstrated commitment to continuous learning through daily problem-solving. Solved 400+ problems, earning 13+ badges and 5-star SQL / 4-star Python ratings on HackerRank.",
+    description: "Demonstrated commitment to continuous learning through daily problem-solving. Solved 400+ problems, earning 13+ badges on Leetcode",
     icon: Award, // Award icon
     status:"leetcode" 
   },
