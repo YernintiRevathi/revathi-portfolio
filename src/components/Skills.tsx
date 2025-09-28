@@ -55,11 +55,11 @@ const skillCategories = [
 
 const achievements = [
   {
-    title: "All-India Hackathon Participant",
-    date: "September 2024",
-    description: "Collaborated with diverse teams across India in a national-level hackathon, focusing on innovative problem-solving.",
-    icon: GraduationCap ,// Generic icon for achievement
-    status:"hackathon"
+    "title": "First Prize at Sankalp Hackathon",
+    "date": "September 20-21, 2025",
+    "description": "Developed a Chrome Extension using JavaScript, NLP, and Chrome APIs to detect and highlight dark UX patterns and misleading subscription practices. The extension identifies hidden elements and manipulative text, calculates a 'Transparency Score' for websites, and provides users with actionable recommendations and one-click guides to opt-out. It also features screenshot generation and community feedback for continuous improvement.",
+    "icon": "GraduationCap",
+    "status": "hackathon"
   },
   {
     title: "290-Day LeetCode Streak",
