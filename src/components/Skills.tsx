@@ -64,7 +64,7 @@ const achievements = [
   {
     title: "310-Day LeetCode Streak",
     date: "Ongoing",
-    description: "Demonstrated commitment to continuous learning through daily problem-solving. Solved 400+ problems, earning 13+ badges on Leetcode",
+    description: "Demonstrated commitment to continuous learning through daily problem-solving. Solved 400+ problems, earning 13+ badges on Leetcode.",
     icon: Award, // Award icon
     status:"leetcode" 
   },
