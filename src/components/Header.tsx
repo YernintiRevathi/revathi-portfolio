@@ -10,6 +10,7 @@ const navLinks = [
   { name: "Home", hash: "#home" },
   { name: "Experience", hash: "#experience" },
   { name: "Skills", hash: "#skills" },
+  { name: "Achievements", hash: "#achievements" },
   { name: "Projects", hash: "#projects" },
   { name: "Education", hash: "#education" },
   { name: "Contact", hash: "#contact" },
