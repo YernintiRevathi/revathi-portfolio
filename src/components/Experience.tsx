@@ -15,6 +15,38 @@ const Experience = () => {
   // Your data remains unchanged
   const experiences = [
     {
+      "role": "Software Engineer Intern",
+      "company": "YugaYatra Retail (OPC) Pvt. Ltd.",
+      "period": "September 2025 - November 2025",
+      "location": "Remote",
+      "type": "Internship",
+      "current": true,
+      "description": "Contributing to live projects in a startup environment, focusing on web/app development and e-commerce solutions. Gaining hands-on experience with AI-powered development tools, freelancing platforms, and major seller portals.",
+      "achievements": [
+        "Developing applications using Cursor AI and Firebase Studio",
+        "Designing digital content and assets with Canva",
+        "Managing freelance projects on Upwork.com",
+        "Working with e-commerce platforms like Amazon and Flipkart"
+      ],
+      "technologies": ["Cursor AI", "Firebase", "Canva", "Upwork", "Google Workspace", "AI"]
+    },
+    {
+      "role": "Front End Web Development Intern",
+      "company": "Edunet Foundation (AICTE)",
+      "period": "August 2025 - October 2025",
+      "location": "Remote",
+      "type": "Internship",
+      "current": true,
+      "description": "Selected for an AICTE-endorsed internship focused on front-end development. Undergoing structured training via the SkillsBuild platform, working with mentors on a project to solve a real-world problem, and leveraging a vast library of technical courses.",
+      "achievements": [
+        "Developing a comprehensive front-end project from concept to completion",
+        "Completing technical sessions and learning modules on the SkillsBuild platform",
+        "Collaborating with mentors and subject matter experts for project guidance",
+        "Gaining proficiency in modern web development practices and principles"
+      ],
+      "technologies": ["Front End Development", "SkillsBuild Platform", "Project Management"]
+    },
+    {
       role: "Freelance App Developer",
       company: "Ride Booking App",
       period: "June 2025 - Present",
