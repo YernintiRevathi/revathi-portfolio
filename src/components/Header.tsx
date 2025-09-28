@@ -11,7 +11,7 @@ const navLinks = [
   { name: "Experience", hash: "#experience" },
   { name: "Skills & Achievements", hash: "#skills" },
   { name: "Projects", hash: "#projects" },
-  { name: "Education", hash: "#education" },
+  { name: "Education & Certifications", hash: "#education" },
   { name: "Contact", hash: "#contact" },
 ];
 
