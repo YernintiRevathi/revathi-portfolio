@@ -11,7 +11,7 @@ const Projects = () => {
   // Your projects data, unchanged.
   const projects = [
     {
-      title: "Dark UX Pattern Detector Chrome Extension (HACKATHON WINNER)",
+      title: "Dark UX Pattern Detector Chrome Extension (Hackathon Winner)",
       description: "Developed a Chrome Extension to identify and expose deceptive 'dark UX patterns' and misleading subscription practices on websites. The tool highlights hidden buttons, pre-checked auto-renewal options, and confirm-shaming text using visual overlays. It implements NLP for misleading text detection and sentiment analysis to calculate a 'Transparency Score' for each webpage. The extension also offers actionable recommendations, one-click unsubscribe guides, and screenshot/report generation. Gamification and community feedback elements were integrated for continuous improvement.",
       technologies: ["JavaScript", "Python", "Flask","NLP", "Scikit-learn", "Chrome APIs", "Blob API", "HTML", "CSS"],
       githubUrl: "https://github.com/YernintiRevathi/Detecting_deceptive_subscriptions_and_dark_UX",
