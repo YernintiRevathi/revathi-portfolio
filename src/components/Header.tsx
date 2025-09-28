@@ -9,8 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { name: "Home", hash: "#home" },
   { name: "Experience", hash: "#experience" },
-  { name: "Skills", hash: "#skills" },
-  { name: "Achievements", hash: "#achievements" },
+  { name: "Skills & Achievements", hash: "#skills" },
   { name: "Projects", hash: "#projects" },
   { name: "Education", hash: "#education" },
   { name: "Contact", hash: "#contact" },
