@@ -75,13 +75,6 @@ const Education = () => {
       status:"Completed"
     },
     {
-      name: "Cloud Computing",
-      issuer: "NPTEL",
-      date: "Jul-Oct 2024",
-      certificateLink: "NPTEL-CC-2024",
-      status:""
-    },
-    {
       name: "IT Essentials",
       issuer: "Cisco",
       date: "May 2023",
