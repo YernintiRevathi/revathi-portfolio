@@ -58,7 +58,7 @@ const achievements = [
     title: "First Prize at Hackathon Sankalp ,held at MVGR college of Engineering",
     date: "September 20-21, 2025",
     description: "Developed a Chrome Extension using JavaScript, NLP, and Chrome APIs to detect and highlight dark UX patterns and misleading subscription practices. The extension identifies hidden elements and manipulative text, calculates a 'Transparency Score' for websites, and provides users with actionable recommendations and one-click guides to opt-out. It also features screenshot generation and community feedback for continuous improvement.",
-    icon: GraduationCap,
+    icon: GraduationCap ,
     status: "hackathon"
   },
   {
