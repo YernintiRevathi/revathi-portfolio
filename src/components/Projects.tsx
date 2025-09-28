@@ -10,20 +10,6 @@ import { motion, AnimatePresence } from "framer-motion";
 const Projects = () => {
   // Your projects data, unchanged.
   const projects = [
-     {
-      title: "Movie Recommendation System",
-      description: "Led team and implemented ML-based recommendation engine using collaborative filtering and content-based filtering algorithms. Developed sophisticated data preprocessing pipelines to handle user ratings and movie metadata. Implemented personalized recommendations with precision and recall optimization. Built comprehensive evaluation metrics to measure recommendation accuracy and user satisfaction. The system processes thousands of movies and user interactions to provide highly accurate personalized movie suggestions.",
-      technologies: ["Python", "Machine Learning", "Pandas", "NumPy", "Scikit-learn", "Collaborative Filtering"],
-      githubUrl: "https://github.com/YernintiRevathi/Movie_recommendation",
-      period: "Jul 2024 - Nov 2024",
-    },
-    {
-      title: "Vehicle Rental Website",
-      description: "Built a comprehensive rental management system with browsing, booking, and admin features. Implemented secure user authentication and role-based access control for customers and administrators. Designed responsive UI with Flask templating and modern CSS frameworks. Integrated real-time availability checking and booking confirmation system. Built admin dashboard for vehicle management, booking oversight, and user management.",
-      technologies: ["Flask", "SQLite", "HTML", "CSS", "JavaScript", "Python"],
-      githubUrl: "https://github.com/YernintiRevathi/RentNGo_vehicle_rental",
-      period: "Mini Project",
-    },
     {
       title: "Dark UX Pattern Detector Chrome Extension",
       description: "Developed a Chrome Extension to identify and expose deceptive 'dark UX patterns' and misleading subscription practices on websites. The tool highlights hidden buttons, pre-checked auto-renewal options, and confirm-shaming text using visual overlays. It implements NLP for misleading text detection and sentiment analysis to calculate a 'Transparency Score' for each webpage. The extension also offers actionable recommendations, one-click unsubscribe guides, and screenshot/report generation. Gamification and community feedback elements were integrated for continuous improvement.",
@@ -44,6 +30,20 @@ const Projects = () => {
       technologies: ["React Native", "APIs", "GPS Tracking", "Real-time Systems", "Mobile Development"],
       githubUrl: "https://github.com/YernintiRevathi",
       period: "Ongoing",
+    },
+    {
+      title: "Vehicle Rental Website",
+      description: "Built a comprehensive rental management system with browsing, booking, and admin features. Implemented secure user authentication and role-based access control for customers and administrators. Designed responsive UI with Flask templating and modern CSS frameworks. Integrated real-time availability checking and booking confirmation system. Built admin dashboard for vehicle management, booking oversight, and user management.",
+      technologies: ["Flask", "SQLite", "HTML", "CSS", "JavaScript", "Python"],
+      githubUrl: "https://github.com/YernintiRevathi/RentNGo_vehicle_rental",
+      period: "Mini Project",
+    },
+    {
+      title: "Movie Recommendation System",
+      description: "Led team and implemented ML-based recommendation engine using collaborative filtering and content-based filtering algorithms. Developed sophisticated data preprocessing pipelines to handle user ratings and movie metadata. Implemented personalized recommendations with precision and recall optimization. Built comprehensive evaluation metrics to measure recommendation accuracy and user satisfaction. The system processes thousands of movies and user interactions to provide highly accurate personalized movie suggestions.",
+      technologies: ["Python", "Machine Learning", "Pandas", "NumPy", "Scikit-learn", "Collaborative Filtering"],
+      githubUrl: "https://github.com/YernintiRevathi/Movie_recommendation",
+      period: "Jul 2024 - Nov 2024",
     }
   ];
 
