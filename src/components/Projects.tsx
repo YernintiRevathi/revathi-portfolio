@@ -25,6 +25,13 @@ const Projects = () => {
       period: "Mini Project",
     },
     {
+      title: "Dark UX Pattern Detector Chrome Extension",
+      description: "Developed a Chrome Extension to identify and expose deceptive 'dark UX patterns' and misleading subscription practices on websites. The tool highlights hidden buttons, pre-checked auto-renewal options, and confirm-shaming text using visual overlays. It implements NLP for misleading text detection and sentiment analysis to calculate a 'Transparency Score' for each webpage. The extension also offers actionable recommendations, one-click unsubscribe guides, and screenshot/report generation. Gamification and community feedback elements were integrated for continuous improvement.",
+      technologies: ["JavaScript", "Python", "Flask","NLP", "Scikit-learn", "Chrome APIs", "Blob API", "HTML", "CSS"],
+      githubUrl: "https://github.com/YernintiRevathi/Detecting_deceptive_subscriptions_and_dark_UX",
+      period: "Sep 20, 2025 - Sep 21, 2025"
+    },
+    {
       title: "Violence Detection System",
       description: "Designed a real-time violence detection model using deep learning and computer vision techniques. Implemented convolutional neural networks for video frame analysis and temporal pattern recognition. Built automated alert system for security applications with high accuracy violence detection. Developed efficient video processing pipeline capable of real-time analysis. Integrated OpenCV for video preprocessing and frame extraction. Created comprehensive testing suite with various violence scenarios and edge cases.",
       technologies: ["Deep Learning", "OpenCV", "Python", "TensorFlow", "Computer Vision", "CNN"],
