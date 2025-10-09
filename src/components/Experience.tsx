@@ -48,7 +48,7 @@ const Experience = () => {
     },
     {
       "role": "Front End Web Development Intern",
-      "company": "Edunet Foundation (in collaboration with IBM SkillsBuild & AICTE)",
+      "company": "Edunet Foundation (IBM SkillsBuild & AICTE)",
       "period": "August 2025 - October 2025",
       "location": "Remote",
       "type": "Internship",
