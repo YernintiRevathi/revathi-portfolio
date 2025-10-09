@@ -47,6 +47,13 @@ const Education = () => {
       status: "In Progress"
     },
     {
+      name: "Web Development Fundamentals",
+      issuer: "IBM SkillsBuild",
+      date: "September 2025",
+      certificateLink: "https://www.credly.com/badges/7a3707b7-8cad-4672-a6b9-eddc1ba50d80/public_url",
+      status: "Completed"
+    },
+    {
       name: "SQL Intermediate",
       issuer: "HackerRank",
       date: "May 2025",
