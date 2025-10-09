@@ -32,22 +32,6 @@ const Experience = () => {
     },
     {
       "role": "Front End Web Development Intern",
-      "company": "Edunet Foundation (AICTE)",
-      "period": "August 2025 - October 2025",
-      "location": "Remote",
-      "type": "Internship",
-      "current": true,
-      "description": "Selected for an AICTE-endorsed internship focused on front-end development. Undergoing structured training via the SkillsBuild platform, working with mentors on a project to solve a real-world problem, and leveraging a vast library of technical courses.",
-      "achievements": [
-        "Developing a comprehensive front-end project from concept to completion",
-        "Completing technical sessions and learning modules on the SkillsBuild platform",
-        "Collaborating with mentors and subject matter experts for project guidance",
-        "Gaining proficiency in modern web development practices and principles"
-      ],
-      "technologies": ["Front End Development", "SkillsBuild Platform", "Project Management"]
-    },
-    {
-      "role": "Front End Web Development Intern",
       "company": "Edunet Foundation (IBM SkillsBuild & AICTE)",
       "period": "August 2025 - October 2025",
       "location": "Remote",
