@@ -54,12 +54,12 @@ const Experience = () => {
       "type": "Internship",
       "current": false,
       "description": "Selected for an AICTE-endorsed internship focused on front-end web development. Completed extensive training modules via the IBM SkillsBuild platform and applied learnings to develop and deploy a dynamic, responsive 'Smart Study Planner' web application from scratch under the guidance of industry mentors.",
-      "achievements": [
-        "Engineered a comprehensive 'Smart Study Planner' web application from concept to completion using pure HTML, CSS, and Vanilla JavaScript.",
-        "Implemented advanced features such as dynamic task sorting, multiple list management, and data persistence using Local Storage.",
-        "Gained proficiency in modern web development by completing all technical sessions and learning modules on the IBM SkillsBuild platform.",
-        "Successfully designed a responsive, mobile-first UI and collaborated with mentors to refine project goals and implementation."
-      ],
+    "achievements": [
+      "Developed a 'Smart Study Planner' web app using Vanilla JavaScript, HTML5, and CSS3.",
+      "Implemented dynamic task sorting, multi-list management, and Local Storage.",
+      "Earned 8 IBM certifications in front-end development technologies.",
+      "Designed a responsive, mobile-first UI and collaborated with mentors on best practices."
+    ],
       "technologies": ["JavaScript (ES6+)", "CSS3 (Flexbox, Responsive Design)", "HTML5", "DOM Manipulation", "Local Storage", "FullCalendar.js"]
     },
     {
