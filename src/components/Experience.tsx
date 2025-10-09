@@ -31,22 +31,6 @@ const Experience = () => {
       "technologies": ["Cursor AI", "Firebase", "Canva", "Upwork", "Google Workspace", "AI"]
     },
     {
-      role: "Front End Web Development Intern",
-      company: "Edunet Foundation (IBM SkillsBuild & AICTE)",
-      period: "August 2025 - October 2025",
-      location: "Remote",
-      type: "Internship",
-      current: false,
-      description: "Selected for an AICTE-endorsed internship focused on front-end web development. Completed extensive training modules via the IBM SkillsBuild platform and applied learnings to develop and deploy a dynamic, responsive 'Smart Study Planner' web application from scratch under the guidance of industry mentors.",
-    achievements: [
-      "Developed a 'Smart Study Planner' web app using Vanilla JavaScript, HTML5, and CSS3.",
-      "Implemented dynamic task sorting, multi-list management, and Local Storage.",
-      "Earned 8 IBM certifications in front-end development technologies.",
-      "Designed a responsive, mobile-first UI and collaborated with mentors on best practices."
-    ],
-      technologies: ["JavaScript (ES6+)", "CSS3 (Flexbox, Responsive Design)", "HTML5", "DOM Manipulation", "Local Storage", "FullCalendar.js"]
-    },
-    {
       role: "Freelance App Developer",
       company: "Ride Booking App",
       period: "June 2025 - Present",
@@ -61,6 +45,22 @@ const Experience = () => {
         "Integrating secure payment gateway and transaction management"
       ],
       technologies: ["React Native", "Firebase", "REST APIs", "Real-time Database", "GPS Integration"]
+    },
+    {
+      role: "Front End Web Development Intern",
+      company: "Edunet Foundation (IBM SkillsBuild & AICTE)",
+      period: "August 2025 - October 2025",
+      location: "Remote",
+      type: "Internship",
+      current: false,
+      description: "Selected for an AICTE-endorsed internship focused on front-end web development. Completed extensive training modules via the IBM SkillsBuild platform and applied learnings to develop and deploy a dynamic, responsive 'Smart Study Planner' web application from scratch under the guidance of industry mentors.",
+    achievements: [
+      "Developed a 'Smart Study Planner' web app using Vanilla JavaScript, HTML5, and CSS3.",
+      "Implemented dynamic task sorting, multi-list management, and Local Storage.",
+      "Earned 8 IBM certifications in front-end development technologies.",
+      "Designed a responsive, mobile-first UI and collaborated with mentors on best practices."
+    ],
+      technologies: ["JavaScript (ES6+)", "CSS3 (Flexbox, Responsive Design)", "HTML5", "DOM Manipulation", "Local Storage", "FullCalendar.js"]
     },
     {
       role: "Java Full Stack Developer Intern",
