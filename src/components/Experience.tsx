@@ -15,20 +15,20 @@ const Experience = () => {
   // Your data remains unchanged
   const experiences = [
     {
-      "role": "Software Engineer Intern",
-      "company": "YugaYatra Retail (OPC) Pvt. Ltd.",
-      "period": "September 2025 - November 2025",
-      "location": "Remote",
-      "type": "Internship",
-      "current": true,
-      "description": "Contributing to live projects in a startup environment, focusing on web/app development and e-commerce solutions. Gaining hands-on experience with AI-powered development tools, freelancing platforms, and major seller portals.",
-      "achievements": [
+      role: "Software Engineer Intern",
+      company: "YugaYatra Retail (OPC) Pvt. Ltd.",
+      period: "September 2025 - November 2025",
+      location: "Remote",
+      type: "Internship",
+      current: true,
+      description: "Contributing to live projects in a startup environment, focusing on web/app development and e-commerce solutions. Gaining hands-on experience with AI-powered development tools, freelancing platforms, and major seller portals.",
+      achievements: [
         "Developing applications using Cursor AI and Firebase Studio",
         "Designing digital content and assets with Canva",
         "Managing freelance projects on Upwork.com",
         "Working with e-commerce platforms like Amazon and Flipkart"
       ],
-      "technologies": ["Cursor AI", "Firebase", "Canva", "Upwork", "Google Workspace", "AI"]
+      technologies: ["Cursor AI", "Firebase", "Canva", "Upwork", "Google Workspace", "AI"]
     },
     {
       role: "Freelance App Developer",
