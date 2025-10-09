@@ -55,10 +55,10 @@ const Experience = () => {
       "current": false,
       "description": "Selected for an AICTE-endorsed internship focused on front-end web development. Completed extensive training modules via the IBM SkillsBuild platform and applied learnings to develop and deploy a dynamic, responsive 'Smart Study Planner' web application from scratch under the guidance of industry mentors.",
       "achievements": [
-        "Engineered and launched a feature-rich 'Smart Study Planner' application using pure HTML, CSS, and Vanilla JavaScript.",
-        "Implemented advanced features including multiple list management, dynamic task sorting by priority and due date, and data persistence using Local Storage.",
-        "Designed a mobile-first, responsive user interface with interactive elements like a progress bar, category filters, and a full-featured calendar view using FullCalendar.js.",
-        "Successfully completed 8 IBM SkillsBuild courses and earned certificates in core areas including JavaScript, HTML/CSS, Responsive Design, and Web Deployment."
+        "Engineered a comprehensive 'Smart Study Planner' web application from concept to completion using pure HTML, CSS, and Vanilla JavaScript.",
+        "Implemented advanced features such as dynamic task sorting, multiple list management, and data persistence using Local Storage.",
+        "Gained proficiency in modern web development by completing all technical sessions and learning modules on the IBM SkillsBuild platform.",
+        "Successfully designed a responsive, mobile-first UI and collaborated with mentors to refine project goals and implementation."
       ],
       "technologies": ["JavaScript (ES6+)", "CSS3 (Flexbox, Responsive Design)", "HTML5", "DOM Manipulation", "Local Storage", "FullCalendar.js"]
     },
