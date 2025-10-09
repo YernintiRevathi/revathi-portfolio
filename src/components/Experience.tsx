@@ -47,6 +47,22 @@ const Experience = () => {
       "technologies": ["Front End Development", "SkillsBuild Platform", "Project Management"]
     },
     {
+      "role": "Front End Web Development Intern",
+      "company": "Edunet Foundation (in collaboration with IBM SkillsBuild & AICTE)",
+      "period": "August 2025 - October 2025",
+      "location": "Remote",
+      "type": "Internship",
+      "current": false,
+      "description": "Selected for an AICTE-endorsed internship focused on front-end web development. Completed extensive training modules via the IBM SkillsBuild platform and applied learnings to develop and deploy a dynamic, responsive 'Smart Study Planner' web application from scratch under the guidance of industry mentors.",
+      "achievements": [
+        "Engineered and launched a feature-rich 'Smart Study Planner' application using pure HTML, CSS, and Vanilla JavaScript.",
+        "Implemented advanced features including multiple list management, dynamic task sorting by priority and due date, and data persistence using Local Storage.",
+        "Designed a mobile-first, responsive user interface with interactive elements like a progress bar, category filters, and a full-featured calendar view using FullCalendar.js.",
+        "Successfully completed 8 IBM SkillsBuild courses and earned certificates in core areas including JavaScript, HTML/CSS, Responsive Design, and Web Deployment."
+      ],
+      "technologies": ["JavaScript (ES6+)", "CSS3 (Flexbox, Responsive Design)", "HTML5", "DOM Manipulation", "Local Storage", "FullCalendar.js"]
+    },
+    {
       role: "Freelance App Developer",
       company: "Ride Booking App",
       period: "June 2025 - Present",
