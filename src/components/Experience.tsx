@@ -20,7 +20,7 @@ const Experience = () => {
       period: "September 2025 - November 2025",
       location: "Remote",
       type: "Internship",
-      current: true,
+      current: false,
       description: "Contributing to live projects in a startup environment, focusing on web/app development and e-commerce solutions. Gaining hands-on experience with AI-powered development tools, freelancing platforms, and major seller portals.",
       achievements: [
         "Developing applications using Cursor AI and Firebase Studio",
