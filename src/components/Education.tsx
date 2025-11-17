@@ -39,13 +39,13 @@ const Education = () => {
   ];
   
   const certifications = [
-    {
-      name: "Full Stack Development",
-      issuer: "GeeksforGeeks",
-      date: "Ongoing",
-      certificateLink: "CFG-FSD-2024",
-      status: "In Progress"
-    },
+    // {
+    //   name: "Full Stack Development",
+    //   issuer: "GeeksforGeeks",
+    //   date: "Ongoing",
+    //   certificateLink: "CFG-FSD-2024",
+    //   status: "In Progress"
+    // },
     {
       name: "Web Development Fundamentals",
       issuer: "IBM SkillsBuild",
@@ -67,20 +67,20 @@ const Education = () => {
       certificateLink: "https://www.hackerrank.com/certificates/iframe/57bbfb28df27",
       status:"Completed"
     },
-    {
-      name: "AWS ML Foundations",
-      issuer: "Amazon Web Services",
-      date: "Apr 2025",
-      certificateLink: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url",
-      status:"Completed"
-    },
-    { 
-      name: "AWS Data Engineering",
-      issuer: "Amazon Web Services",
-      date: "Apr 2025",
-      certificateLink: "https://www.credly.com/badges/2398ef71-e1ed-4d28-a171-3bcde4b03365/public_url",
-      status:"Completed"
-    },
+    // {
+    //   name: "AWS ML Foundations",
+    //   issuer: "Amazon Web Services",
+    //   date: "Apr 2025",
+    //   certificateLink: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url",
+    //   status:"Completed"
+    // },
+    // { 
+    //   name: "AWS Data Engineering",
+    //   issuer: "Amazon Web Services",
+    //   date: "Apr 2025",
+    //   certificateLink: "https://www.credly.com/badges/2398ef71-e1ed-4d28-a171-3bcde4b03365/public_url",
+    //   status:"Completed"
+    // },
     {
       name: "IT Essentials",
       issuer: "Cisco",

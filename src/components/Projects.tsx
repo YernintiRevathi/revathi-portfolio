@@ -17,13 +17,13 @@ const Projects = () => {
       githubUrl: "https://github.com/YernintiRevathi/Detecting_deceptive_subscriptions_and_dark_UX",
       period: "Sep 20, 2025 - Sep 21, 2025"
     },
-    {
-      title: "Violence Detection System",
-      description: "Designed a real-time violence detection model using deep learning and computer vision techniques. Implemented convolutional neural networks for video frame analysis and temporal pattern recognition. Built automated alert system for security applications with high accuracy violence detection. Developed efficient video processing pipeline capable of real-time analysis. Integrated OpenCV for video preprocessing and frame extraction. Created comprehensive testing suite with various violence scenarios and edge cases.",
-      technologies: ["Deep Learning", "OpenCV", "Python", "TensorFlow", "Computer Vision", "CNN"],
-      githubUrl: "https://github.com/YernintiRevathi",
-      period: "Ongoing",
-    },
+    // {
+    //   title: "Violence Detection System",
+    //   description: "Designed a real-time violence detection model using deep learning and computer vision techniques. Implemented convolutional neural networks for video frame analysis and temporal pattern recognition. Built automated alert system for security applications with high accuracy violence detection. Developed efficient video processing pipeline capable of real-time analysis. Integrated OpenCV for video preprocessing and frame extraction. Created comprehensive testing suite with various violence scenarios and edge cases.",
+    //   technologies: ["Deep Learning", "OpenCV", "Python", "TensorFlow", "Computer Vision", "CNN"],
+    //   githubUrl: "https://github.com/YernintiRevathi",
+    //   period: "Ongoing",
+    // },
     {
       title: "Ride-Hailing App",
       description: "Implemented driver-rider workflows, focusing on real-time booking logic and system security. Developed comprehensive mobile application using React Native for cross-platform compatibility. Built real-time GPS tracking and route optimization algorithms. Implemented secure payment gateway integration and transaction management. Created driver and rider matching algorithms based on proximity and availability. Developed admin panel for ride management, driver verification, and system analytics. Integrated push notifications for real-time updates and communication.",
