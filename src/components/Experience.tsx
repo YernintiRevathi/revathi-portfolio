@@ -30,22 +30,22 @@ const Experience = () => {
       ],
       technologies: ["Cursor AI", "Firebase", "Canva", "Upwork", "Google Workspace", "AI"]
     },
-    {
-      role: "Freelance App Developer",
-      company: "Ride Booking App",
-      period: "June 2025 - Present",
-      location: "Remote",
-      type: "Freelance",
-      current: true,
-      description: "Developing scalable ride-booking apps (web + mobile) using React, Firebase, and REST APIs. Integrated real-time database and designed backend for scalability and security. Developing a website and an app for efficient ride booking implementations.",
-      achievements: [
-        "Building cross-platform mobile application with React Native",
-        "Implementing real-time GPS tracking and route optimization",
-        "Designing scalable backend architecture with Firebase",
-        "Integrating secure payment gateway and transaction management"
-      ],
-      technologies: ["React Native", "Firebase", "REST APIs", "Real-time Database", "GPS Integration"]
-    },
+    // {
+    //   role: "Freelance App Developer",
+    //   company: "Ride Booking App",
+    //   period: "June 2025 - Present",
+    //   location: "Remote",
+    //   type: "Freelance",
+    //   current: true,
+    //   description: "Developing scalable ride-booking apps (web + mobile) using React, Firebase, and REST APIs. Integrated real-time database and designed backend for scalability and security. Developing a website and an app for efficient ride booking implementations.",
+    //   achievements: [
+    //     "Building cross-platform mobile application with React Native",
+    //     "Implementing real-time GPS tracking and route optimization",
+    //     "Designing scalable backend architecture with Firebase",
+    //     "Integrating secure payment gateway and transaction management"
+    //   ],
+    //   technologies: ["React Native", "Firebase", "REST APIs", "Real-time Database", "GPS Integration"]
+    // },
     {
       role: "Front End Web Development Intern",
       company: "Edunet Foundation (IBM SkillsBuild & AICTE)",
@@ -61,39 +61,39 @@ const Experience = () => {
       "Designed a responsive, mobile-first UI and collaborated with mentors on best practices."
     ],
       technologies: ["JavaScript (ES6+)", "CSS3 (Flexbox, Responsive Design)", "HTML5", "DOM Manipulation", "Local Storage", "FullCalendar.js"]
-    },
-    {
-      role: "Java Full Stack Developer Intern",
-      company: "NDV Techsys",
-      period: "May 2025 - Jul 2025",
-      location: "Remote",
-      type: "Internship",
-      current: false,
-      description: "Built software solutions using React, Node.js, and MongoDB. Collaborated in agile sprints, ensuring secure API integration and deployment. Gained hands-on experience in full-stack development with modern technologies and best practices.",
-      achievements: [
-        "Developed full-stack web applications using modern JavaScript stack",
-        "Implemented secure API integrations and database management",
-        "Collaborated effectively in agile development environment",
-        "Contributed to code reviews and deployment processes"
-      ],
-      technologies: ["React", "Node.js", "MongoDB", "JavaScript", "Agile", "API Integration"]
-    },
-    {
-      role: "AI/ML Intern",
-      company: "NDV Techsys",
-      period: "May 2025 - Jul 2025",
-      location: "Remote",
-      type: "Internship",
-      current: false,
-      description: "Built ML models for prediction, classification, and analytics in real projects. Completed hands-on projects in supervised learning algorithms. Gained practical experience in machine learning implementation and model optimization.",
-      achievements: [
-        "Developed machine learning models for real-world applications",
-        "Implemented supervised learning algorithms for classification tasks",
-        "Conducted data preprocessing and feature engineering",
-        "Optimized model performance and accuracy metrics"
-      ],
-      technologies: ["Python", "Machine Learning", "Pandas", "NumPy", "Scikit-learn", "Data Analytics"]
     }
+    // ,{
+    //   role: "Java Full Stack Developer Intern",
+    //   company: "NDV Techsys",
+    //   period: "May 2025 - Jul 2025",
+    //   location: "Remote",
+    //   type: "Internship",
+    //   current: false,
+    //   description: "Built software solutions using React, Node.js, and MongoDB. Collaborated in agile sprints, ensuring secure API integration and deployment. Gained hands-on experience in full-stack development with modern technologies and best practices.",
+    //   achievements: [
+    //     "Developed full-stack web applications using modern JavaScript stack",
+    //     "Implemented secure API integrations and database management",
+    //     "Collaborated effectively in agile development environment",
+    //     "Contributed to code reviews and deployment processes"
+    //   ],
+    //   technologies: ["React", "Node.js", "MongoDB", "JavaScript", "Agile", "API Integration"]
+    // },
+    // {
+    //   role: "AI/ML Intern",
+    //   company: "NDV Techsys",
+    //   period: "May 2025 - Jul 2025",
+    //   location: "Remote",
+    //   type: "Internship",
+    //   current: false,
+    //   description: "Built ML models for prediction, classification, and analytics in real projects. Completed hands-on projects in supervised learning algorithms. Gained practical experience in machine learning implementation and model optimization.",
+    //   achievements: [
+    //     "Developed machine learning models for real-world applications",
+    //     "Implemented supervised learning algorithms for classification tasks",
+    //     "Conducted data preprocessing and feature engineering",
+    //     "Optimized model performance and accuracy metrics"
+    //   ],
+    //   technologies: ["Python", "Machine Learning", "Pandas", "NumPy", "Scikit-learn", "Data Analytics"]
+    // }
   ];
 
   return (
