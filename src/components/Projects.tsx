@@ -24,13 +24,13 @@ const Projects = () => {
     //   githubUrl: "https://github.com/YernintiRevathi",
     //   period: "Ongoing",
     // },
-    {
-      title: "Ride-Hailing App",
-      description: "Implemented driver-rider workflows, focusing on real-time booking logic and system security. Developed comprehensive mobile application using React Native for cross-platform compatibility. Built real-time GPS tracking and route optimization algorithms. Implemented secure payment gateway integration and transaction management. Created driver and rider matching algorithms based on proximity and availability. Developed admin panel for ride management, driver verification, and system analytics. Integrated push notifications for real-time updates and communication.",
-      technologies: ["React Native", "APIs", "GPS Tracking", "Real-time Systems", "Mobile Development"],
-      githubUrl: "https://github.com/YernintiRevathi",
-      period: "Ongoing",
-    },
+    // {
+    //   title: "Ride-Hailing App",
+    //   description: "Implemented driver-rider workflows, focusing on real-time booking logic and system security. Developed comprehensive mobile application using React Native for cross-platform compatibility. Built real-time GPS tracking and route optimization algorithms. Implemented secure payment gateway integration and transaction management. Created driver and rider matching algorithms based on proximity and availability. Developed admin panel for ride management, driver verification, and system analytics. Integrated push notifications for real-time updates and communication.",
+    //   technologies: ["React Native", "APIs", "GPS Tracking", "Real-time Systems", "Mobile Development"],
+    //   githubUrl: "https://github.com/YernintiRevathi",
+    //   period: "Ongoing",
+    // },
     {
       title: "Vehicle Rental Website",
       description: "Built a comprehensive rental management system with browsing, booking, and admin features. Implemented secure user authentication and role-based access control for customers and administrators. Designed responsive UI with Flask templating and modern CSS frameworks. Integrated real-time availability checking and booking confirmation system. Built admin dashboard for vehicle management, booking oversight, and user management.",
