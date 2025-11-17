@@ -12,7 +12,6 @@ import { Calendar, MapPin, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Experience = () => {
-  // Your data remains unchanged
   const experiences = [
     {
       role: "Software Engineer Intern",
