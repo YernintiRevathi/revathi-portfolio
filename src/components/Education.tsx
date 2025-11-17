@@ -74,7 +74,7 @@ const Education = () => {
       certificateLink: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url",
       status:"Completed"
     },
-    {
+    { 
       name: "AWS Data Engineering",
       issuer: "Amazon Web Services",
       date: "Apr 2025",
