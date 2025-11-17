@@ -53,7 +53,7 @@ const Experience = () => {
       location: "Remote",
       type: "Internship",
       current: false,
-      description: "Selected for an AICTE-endorsed internship focused on front-end web development. Completed extensive training modules via the IBM SkillsBuild platform and applied learnings to develop and deploy a dynamic, responsive 'Smart Study Planner' web application from scratch under the guidance of industry mentors.",
+      description: "Selected for an AICTE-endorsed internship focused on front-end web development. Completed extensive training modules via the IBM SkillsBuild platform and applied learnings to develop and deploy a dynamic, responsive \'Smart Study Planner\' web application from scratch under the guidance of industry mentors.",
     achievements: [
       "Developed a 'Smart Study Planner' web app using Vanilla JavaScript, HTML5, and CSS3.",
       "Implemented dynamic task sorting, multi-list management, and Local Storage.",
