@@ -20,35 +20,35 @@ const skillCategories = [
     category: "Web Development",
     icon: Linkedin, // Using Linkedin as a placeholder for web dev icon
     skills: [
-      "React", "Node.js", "Express.js", "HTML/CSS", "Tailwind CSS", "Next.js" // Added Tailwind/Next.js
+      "React", "HTML","CSS" //, "Node.js", "Express.js", "Tailwind CSS", "Next.js" 
     ]
   },
-  {
-    category: "Mobile Development",
-    icon: GraduationCap, // Using GraduationCap as a placeholder for mobile dev icon
-    skills: [
-      "React Native", "REST APIs"
-    ]
-  },
+  // {
+  //   category: "Mobile Development",
+  //   icon: GraduationCap, // Using GraduationCap as a placeholder for mobile dev icon
+  //   skills: [
+  //     "React Native", "REST APIs"
+  //   ]
+  // },
   {
     category: "Databases",
     icon: Database, // Database icon
     skills: [
-      "MySQL", "SQLite", "MongoDB"
+      "MySQL", "SQLite" //, "MongoDB"
     ]
   },
   {
     category: "AI/ML & Data Science",
     icon: BrainCircuit, // Brain icon for AI/ML
     skills: [
-      "Python", "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "OpenCV", "Flask"
+      "Python", "Pandas", "NumPy", "Scikit-learn" //, "TensorFlow", "OpenCV", "Flask"
     ]
   },
   {
     category: "Tools & Cloud",
     icon: Cloud, // Cloud icon for cloud services
     skills: [
-      "Git/GitHub", "Firebase", "AWS", "Docker", "VS Code", "GPT/Copilot", "Cursor" // Added Docker, VS Code
+      "Git/GitHub", "Firebase", "VS Code" //, "AWS", "Docker", "GPT/Copilot", "Cursor" // Added Docker, VS Code
     ]
   }
 ];
@@ -62,7 +62,7 @@ const achievements = [
     status: "hackathon"
   },
   {
-    title: "310-Day LeetCode Streak",
+    title: "360-Day LeetCode Streak",
     date: "Ongoing",
     description: "Demonstrated commitment to continuous learning through daily problem-solving. Solved 400+ problems, earning 13+ badges on Leetcode.",
     icon: Award, // Award icon
