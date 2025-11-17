@@ -21,7 +21,7 @@ const Experience = () => {
       location: "Remote",
       type: "Internship",
       current: false,
-      description: "Built a feature-rich frontend for an educational platform using React and TypeScript. Gained hands-on experience in building complex client-side features, including simulated user authentication, role-based dashboards, and a dummy payment system, while using Cursor AI to streamline development",
+      description: "Built a feature-rich frontend for an educational platform using React and TypeScript. Gained hands-on experience in building complex client-side features, including simulated user authentication, role-based dashboards, and a dummy payment system, while using Cursor AI to streamline development ",
       achievements: [
         "Built a client-side user/admin authentication and dashboard system."
         "Created a simulated multi-step payment flow for donations."
