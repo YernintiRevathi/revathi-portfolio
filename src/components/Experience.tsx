@@ -21,14 +21,14 @@ const Experience = () => {
       location: "Remote",
       type: "Internship",
       current: false,
-      description: "Contributing to live projects in a startup environment, focusing on web/app development and e-commerce solutions. Gaining hands-on experience with AI-powered development tools, freelancing platforms, and major seller portals.",
+      description: "Built a feature-rich frontend for an educational platform using React and TypeScript. Gained hands-on experience in building complex client-side features, including simulated user authentication, role-based dashboards, and a dummy payment system, while using Cursor AI to streamline development",
       achievements: [
-        "Developing applications using Cursor AI and Firebase Studio",
-        "Designing digital content and assets with Canva",
-        "Managing freelance projects on Upwork.com",
-        "Working with e-commerce platforms like Amazon and Flipkart"
+        "Built a client-side user/admin authentication and dashboard system."
+        "Created a simulated multi-step payment flow for donations."
+        "Implemented full internationalization (EN/HI) and theme switching."
+        "Managed project version control with Git and GitHub."
       ],
-      technologies: ["Cursor AI", "Firebase", "Canva", "Upwork", "Google Workspace", "AI"]
+      technologies: ["Cursor AI", "Firebase", "Canva", "AI"]
     },
     // {
     //   role: "Freelance App Developer",
