@@ -67,19 +67,17 @@ const Projects = () => {
           </p>
         </div>
         
-        {/* Change 1: Replaced the grid with a centered, stacked flex layout */}
-        <div className="flex flex-col items-center gap-8">
+        <div className="flex flex-col items-center gap-8 px-4">
           {projects.map((project, index) => (
-            // Change 2: The card container now has a max width and a more compact height
             <div
               key={index}
-              className="relative w-full max-w-4xl h-[300px] rounded-lg overflow-hidden border border-border/20 bg-card"
+              className="relative w-full max-w-4xl min-h-[350px] sm:min-h-[320px] rounded-lg overflow-hidden border border-border/20 bg-card"
             >
               <AnimatePresence initial={false}>
                 {flippedIndex === index ? (
                   <motion.div
                     key="back"
-                    className="absolute inset-0 p-6 flex flex-col"
+                    className="absolute inset-0 p-4 sm:p-6 flex flex-col"
                     variants={slideVariants}
                     initial="enter"
                     animate="center"
@@ -87,13 +85,13 @@ const Projects = () => {
                     custom={1}
                     transition={{ duration: 0.3 }}
                   >
-                    <CardHeader className="p-0 mb-4 flex-shrink-0">
-                      <CardTitle className="text-xl text-primary">{project.title}</CardTitle>
+                    <CardHeader className="p-0 mb-3 sm:mb-4 flex-shrink-0">
+                      <CardTitle className="text-base sm:text-xl text-primary leading-tight">{project.title}</CardTitle>
                     </CardHeader>
-                    <CardContent className="p-0 flex-grow overflow-y-auto">
+                    <CardContent className="p-0 flex-grow overflow-y-auto scrollbar-thin">
                       <CardDescription className="text-sm text-muted-foreground pr-2">{project.description}</CardDescription>
                     </CardContent>
-                    <CardFooter className="p-0 pt-4 flex-shrink-0">
+                    <CardFooter className="p-0 pt-3 sm:pt-4 flex-shrink-0">
                       <Button variant="outline" size="sm" onClick={() => setFlippedIndex(null)}>
                         <ArrowLeft className="w-4 h-4 mr-2" />
                         Back
@@ -103,7 +101,7 @@ const Projects = () => {
                 ) : (
                   <motion.div
                     key="front"
-                    className="absolute inset-0 p-6 flex flex-col"
+                    className="absolute inset-0 p-4 sm:p-6 flex flex-col"
                     variants={slideVariants}
                     initial="enter"
                     animate="center"
@@ -111,15 +109,15 @@ const Projects = () => {
                     custom={-1}
                     transition={{ duration: 0.3 }}
                   >
-                    <CardHeader className="p-0 mb-4">
-                      <div className="flex items-start justify-between">
-                        <CardTitle className="text-xl">{project.title}</CardTitle>
-                        <Badge variant="outline" className="text-xs flex-shrink-0">
+                    <CardHeader className="p-0 mb-3 sm:mb-4">
+                      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+                        <CardTitle className="text-base sm:text-xl leading-tight pr-2">{project.title}</CardTitle>
+                        <Badge variant="outline" className="text-xs flex-shrink-0 w-fit">
                           {project.period}
                         </Badge>
                       </div>
                     </CardHeader>
-                    <CardContent className="p-0 flex-grow">
+                    <CardContent className="p-0 flex-grow overflow-y-auto">
                       <h4 className="font-semibold text-sm mb-2">Technologies Used:</h4>
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.map((tech, techIndex) => (
@@ -129,12 +127,12 @@ const Projects = () => {
                         ))}
                       </div>
                     </CardContent>
-                    <CardFooter className="p-0 pt-4 flex items-center justify-between">
+                    <CardFooter className="p-0 pt-3 sm:pt-4 flex flex-col sm:flex-row items-start sm:items-center sm:justify-between gap-3">
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-muted-foreground hover:text-primary flex items-center gap-2">
                         <Github className="w-4 h-4" />
                         Source Code
                       </a>
-                       <Button variant="secondary" size="sm" onClick={() => setFlippedIndex(index)}>
+                       <Button variant="secondary" size="sm" onClick={() => setFlippedIndex(index)} className="w-full sm:w-auto">
                         View Details <ArrowRight className="w-4 h-4 ml-2" />
                       </Button>
                     </CardFooter>
