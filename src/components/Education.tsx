@@ -75,19 +75,12 @@ const Education = () => {
       status:"Completed"
     },
     {
-      name: "AWS ML Foundations",
+      name: "AWS ML For Natural Language Processing",
       issuer: "Amazon Web Services",
-      date: "Apr 2025",
-      certificateLink: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url",
+      date: "Dec 2025",
+      certificateLink: "https://www.credly.com/badges/922b5e0f-9753-4f0d-b9af-f293749179f2/public_url",
       status:"Completed"
     },
-    {
-      name: "AWS ML Foundations",
-      issuer: "Amazon Web Services",
-      date: "Apr 2025",
-      certificateLink: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url",
-      status:"Completed"
-    }
     // { 
     //   name: "AWS Data Engineering",
     //   issuer: "Amazon Web Services",
@@ -95,19 +88,26 @@ const Education = () => {
     //   certificateLink: "https://www.credly.com/badges/2398ef71-e1ed-4d28-a171-3bcde4b03365/public_url",
     //   status:"Completed"
     // },
+    // {
+    //   name: "IT Essentials",
+    //   issuer: "Cisco",
+    //   date: "May 2023",
+    //   certificateLink: "https://www.credly.com/badges/7dd56904-85fc-4452-833e-327842ced83b/public_url",
+    //   status:"Completed"
+    // },
+    // {
+    //   name: "Programming in C",
+    //   issuer: "Cisco",
+    //   date: "Apr 2023",
+    //   certificateLink: "CISCO-C-2023",
+    //   status:""
+    // }
     {
-      name: "IT Essentials",
-      issuer: "Cisco",
-      date: "May 2023",
-      certificateLink: "https://www.credly.com/badges/7dd56904-85fc-4452-833e-327842ced83b/public_url",
+      name: "AWS Generative AI Foundations",
+      issuer: "Amazon Web Services",
+      date: "Dec 2025",
+      certificateLink: "https://www.credly.com/badges/e6919b7b-cd77-4e88-a247-bd1d99f32a3d/public_url",
       status:"Completed"
-    },
-    {
-      name: "Programming in C",
-      issuer: "Cisco",
-      date: "Apr 2023",
-      certificateLink: "CISCO-C-2023",
-      status:""
     }
   ];
   const [activeSlides, setActiveSlides] = useState([0, 0, 0]);
