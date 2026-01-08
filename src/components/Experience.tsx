@@ -14,6 +14,21 @@ import { motion } from "framer-motion";
 const Experience = () => {
   const experiences = [
     {
+      role: "GEN-AI Virtual Intern",
+      company: "AICTE – EduSkills (AWS Academy)",
+      period: "October 2024 – December 2024",
+      location: "Remote",
+      type: "Internship",
+      current: false,
+      description: "Worked with Machine Learning fundamentals, NLP text processing, and Generative AI workflows through structured AWS Academy labs and real-world examples.",
+      achievements: [
+        "Applied NLP text preprocessing techniques such as tokenization and normalization.",
+        "Understood end-to-end machine learning workflows, including data preparation and model training concepts.",
+        "Explored real-world use cases of Generative AI and modern AI applications."
+      ],
+      technologies: ["Python", "Machine Learning", "NLP", "Generative AI", "AWS Academy"]
+    },
+    {
       role: "Software Engineer Intern",
       company: "YugaYatra Retail (OPC) Pvt. Ltd.",
       period: "September 2025 - November 2025",
