@@ -13,9 +13,9 @@ const Education = () => {
       degree: "B.Tech in Computer Science and Engineering",
       institution: "MVGR College of Engineering",
       period: "2022 - 2026 (Expected)",
-      cgpa: "8.97/10.0",
+      cgpa: "8.88/10.0",
       description: "Pursuing comprehensive computer science education with focus on software engineering, data structures, algorithms, and machine learning. Currently maintaining excellent academic performance with hands-on experience in multiple programming languages and development frameworks.",
-      achievements: ["CGPA: 8.97", "Active participant in coding competitions", "Hackathon participant","Won 1st place in dance competition","Member of Dance and Art clubs"],
+      achievements: ["CGPA: 8.88", "Active participant in coding competitions", "Hackathon participant","Won 1st place in dance competition","Member of Dance and Art clubs"],
       relevantCourses: ["Data Structures & Algorithms", "Machine Learning", "Database Management", "Software Engineering", "Computer Networks", "Operating Systems"]
     },
     {
@@ -67,13 +67,27 @@ const Education = () => {
       certificateLink: "https://www.hackerrank.com/certificates/iframe/57bbfb28df27",
       status:"Completed"
     },
-    // {
-    //   name: "AWS ML Foundations",
-    //   issuer: "Amazon Web Services",
-    //   date: "Apr 2025",
-    //   certificateLink: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url",
-    //   status:"Completed"
-    // },
+    {
+      name: "AWS ML Foundations",
+      issuer: "Amazon Web Services",
+      date: "Apr 2025",
+      certificateLink: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url",
+      status:"Completed"
+    },
+    {
+      name: "AWS ML Foundations",
+      issuer: "Amazon Web Services",
+      date: "Apr 2025",
+      certificateLink: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url",
+      status:"Completed"
+    },
+    {
+      name: "AWS ML Foundations",
+      issuer: "Amazon Web Services",
+      date: "Apr 2025",
+      certificateLink: "https://www.credly.com/badges/fb381b27-da5f-4ce7-803c-ca632019e0e1/public_url",
+      status:"Completed"
+    }
     // { 
     //   name: "AWS Data Engineering",
     //   issuer: "Amazon Web Services",
